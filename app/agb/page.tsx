@@ -150,7 +150,7 @@ export default function AGBPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-blue-400">Gerichtsstand</h2>
                 <p className="text-gray-300">
-                  Es gilt das Recht der Bundesrepublik Deutschland. Für alle Rechtsstreitigkeiten ist Köln der
+                  Es gilt das Recht der Bundesrepublik Deutschland. Für alle Rechtsstreitigkeiten ist Hannover der
                   ausschließliche Gerichtsstand.
                 </p>
                 <p className="text-gray-300 mt-4">Stand: 01.01.2021</p>

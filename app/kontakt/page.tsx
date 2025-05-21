@@ -91,7 +91,8 @@ export default function KontaktPage() {
                   <Phone className="h-8 w-8 text-blue-400 mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Telefon</h3>
-                    <p className="text-gray-300">+49 (0) 163 1902432 </p>
+                    <p className="text-gray-300">Festnetz: +49 51199922127</p>
+                    <p className="text-gray-300">Mobil: +49 1631902432</p>
                   </div>
                 </div>
 

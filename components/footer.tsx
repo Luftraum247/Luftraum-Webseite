@@ -142,7 +142,11 @@ export default function Footer() {
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400">+49 (0) 163 1902432 </span>
+                <span className="text-gray-400">Festnetz: +49 51199922127</span>
+              </li>
+              <li className="flex">
+                <Phone className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0" />
+                <span className="text-gray-400">Mobil: +49 1631902432</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0" />

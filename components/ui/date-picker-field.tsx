@@ -66,7 +66,7 @@ export function DatePickerField({ selectedDates, onChange, maxDates = 3 }: DateP
             const now = new Date()
             now.setHours(0, 0, 0, 0)
             const day = date.getDay()
-            return date < now || day === 0 || day === 6
+            return date < now || day === 0
           }}
           footer={
             <div className="mt-4 text-center text-sm text-gray-400">

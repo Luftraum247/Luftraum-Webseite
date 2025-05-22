@@ -30,7 +30,7 @@ export default function DienstleistungenPage() {
       price: "Ab 199€ (Privat) / Ab 299€ (Gewerblich)",
       shortDescription: "Für Einfamilienhäuser und Kleingewerbe mit 0-20kWp",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dji-matrice-m30t-hochspannungsnetz-p5rp0GUZ1lfcXKsofC0u9IEqs3dIS3.webp",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI-M30-Profi-Drohne-im-Test-13.jpg-JhAu9YaJULprA1Ue3Ok4GtZCr6C8Ec.jpeg",
       content: `
         <p>Basis Paket z. B. für Einfamilienhäuser für unsere Privatkunden oder Kleingewerbe mit einer Anzahl von 0- 20kWp nach DIN VDE V 0126-23-3 (Thermografie) Preise abhängig von der Anzahl an kWp der PV-Anlage Preisrichtung: bis 20 Kwp 199€ Inkl. Nachbearbeitung der Wärmebildaufnahmen. mehrseitiges pdf-Übergabeprotokoll</p>
       `,
@@ -40,7 +40,8 @@ export default function DienstleistungenPage() {
       title: "Jährliche Inspektionspaket",
       price: "Ab 499€",
       shortDescription: "Medium Paket für Anlagen bis 50 KWp",
-      image: "/drone-building-inspection.png",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_20230612151608_0003_T.jpg-KbGYtxWGtdOjLgfGatjRFA4ypoGWKq.jpeg",
       content: `
         <p>Medium Paket (bis 50 KWp Anlagengröße): *thermografische Inspektion der kompletten Anlage *Automatisierte Fehlererkennung durch KI-gestützte Analyse *Detaillierter Zustandsbericht mit Hotspot-Markierung *Priorisierte Handlungsempfehlungen *Online-Zugang zum digitalen Anlagenportal *24/48h Reaktionszeit bei kritischen Befunden *Monatlicher Performance-Report *Dokumentation aller Inspektionen gemäß IEC-Norm Preis: 499€ Zusatzoptionen: *Zusätzliche MWp: +299€/MWp/Monat *Express-Inspektion (24h): +149€/Einsatz Detaillierte Einzelmodulanalyse: *+10€/Modul *Export der Rohdaten: +49€/Inspektion</p>
       `,
@@ -50,6 +51,7 @@ export default function DienstleistungenPage() {
       title: "SolarCheck Annual",
       price: "Ab 1799€",
       shortDescription: "Premium Paket für größere Anlagen bis 1 MWp",
+      // image: "/solar-farm-inspection.webp",
       image: "/solar-farm-inspection.webp",
       // image:
       //   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dji-matrice-m30t-hochspannungsnetz-p5rp0GUZ1lfcXKsofC0u9IEqs3dIS3.webp",
@@ -62,7 +64,7 @@ export default function DienstleistungenPage() {
       title: "Solar Care Plus",
       price: "Preis nach Anfrage",
       shortDescription: "Ihr Rundum-Sorglos-Paket für PV-Anlagen",
-      image: "/solar-farm-inspection.webp",
+      image: "/solar-thermal-inspection.webp",
       // image: "/drone-building-inspection.png",
       content: `
         <p>Solar Care Plus - Ihr Rundum-Sorglos-Paket für PV-Anlagen Professionelle PV-Anlagen-Wartung mit modernster Drohnentechnologie Warum ist die regelmäßige Prüfung Ihrer Photovoltaikanlage unverzichtbar? PV-Anlagen sind täglich Witterung und Umwelteinflüssen ausgesetzt und unterliegen natürlichen Alterungsprozessen. Unentdeckte Mängel können nicht nur die Leistung beeinträchtigen, sondern auch ein Sicherheitsrisiko darstellen. Unser Solar Care Plus Komplettpaket beinhaltet: *Drohnengestützte Thermografie-Inspektion *Hochauflösende Wärmebildaufnahmen mit DJI Matrice M30T *3D-Thermografie-Modell Ihrer Anlage *Detaillierte Zustandsanalyse und Dokumentation *Grundpreis ab €399 im Jahr bis 12 KWp. *Professionelle Wartung *Regelmäßige Sichtprüfung aller Module *Dokumentation des Anlagenzustands *Überprüfung der Montagesysteme Kabel- und Leitungskontrolle *Elektrotechnische Prüfung (durch zertifizierte Partnerbetriebe) *Prüfung nach aktuellen DIN-Normen *AC/DC-Messungen *Überprüfung aller Sicherheitskomponenten *Kontrolle der Überwachungssysteme *Anlagenreinigung nach Bedarf *Professionelle Modulreinigung nach Bedarf *Beseitigung von Verschmutzungen *Optimierung der Leistungsfähigkeit *Flexible Wartungsverträge: Beispiele Basis-Paket (bis 12 kWp): €299/Jahr für jährliche Inspektion €399/Jahr inklusive Reinigung Premium-Paket (bis 25 kWp): €449/Jahr 2x jährliche Drohneninspektion 1x Reinigung nach Pollensaison Ihre Vorteile mit Luftraum247: *Über 150 erfolgreich durchgeführte Projekte *Bundesweiter Service (kostenfreie Anfahrt bis 30 km) *Modernste Drohnenflotte (DJI Matrice M30T, Autel Evo Lite 640T) *Zertifizierte Prüfung nach allen relevanten Normen: DIN EN 62446-2 VDE 0126-23-1 VDS 2871 SK 3602 DGUV Vorschrift 3 TRBS 1201 Qualitätsgarantie: *Ausführliche Dokumentation für *Versicherungen *Zertifizierte Fachkräfte *Moderne Mess- und Prüftechnik *Schnelle Reaktionszeiten bei Störungen.</p>
@@ -122,7 +124,8 @@ export default function DienstleistungenPage() {
       title: "IndustryCheck Annual",
       price: "1999€",
       shortDescription: "Jährliches Inspektionspaket für Anlagen bis 50.000m²",
-      image: "/solar-thermal-inspection.webp",
+      // image: "/solar-thermal-inspection.webp",
+      image: "/drone-building-inspection.png",
       content: `
         <p>Grundpaket (bis 50.000 m² Industrieanlage im Außenbereich): *2 umfassende Inspektionen pro Jahr (Halbjährig) Kombination aus: *Visueller Inspektion (RGB) *Thermografischer Analyse Ausführlicher Halbjährig Bericht mit: *Zustandsbewertung aller Anlagenteile *Verschleißanalyse *Wartungsempfehlungen *Vergleichsanalyse zu Vorquartalen *Jährlicher Gesamtbericht *3D Digitaler Anlagenzwilling (optional) *ISO-konforme Dokumentation Preis: 1.999€/Jahr* Zusatzoptionen: *Zusätzliche 1.000 m²: +199€/Jahr *Zusätzliche Inspektion: +649€ *Präsentation vor Ort: +299€ *Notfallinspektion: +599€ Beide Pakete beinhalten: *Zertifizierte Industrieinspektoren *Modernste Drohnentechnologie (DJI M30T/Autel EVO Lite 640T Enterprise) *Versicherungskonforme Berichtserstellung *Exportfähige Daten für CMMS-Integration *Prioritäts-Support *Alle Preise zzgl. MwSt. und Anfahrtskosten ab 30km (0,95€/km)</p>
       `,
@@ -462,7 +465,7 @@ export default function DienstleistungenPage() {
             <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="/autel-evo-drone.jpeg"
+                  src="/dji-inspire-2.png"
                   alt="Luftbildfotografie"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -508,7 +511,7 @@ export default function DienstleistungenPage() {
             <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI-Mini-3-Pro-M6pZBwoxteO2P7HfJNmTD9a7VKpChv.webp"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Notfall-%20und%20Katastrophenmanagement%20%281%29-bfprVNp2wldUkRgdFxZIZjt4gtP08G.png"
                   alt="Notfall- und Katastrophenmanagement"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

@@ -352,7 +352,8 @@ export default function Home() {
               <Phone className="h-10 w-10 text-blue-400 mr-4" />
               <div>
                 <h3 className="text-lg font-semibold mb-1">Telefon</h3>
-                <p className="text-gray-300">+49 (0) 123 456789</p>
+                <p className="text-gray-300">Festnetz: +49 51199922127</p>
+                <p className="text-gray-300">Mobil: +49 1631902432</p>
               </div>
             </div>
             <div className="flex items-center">

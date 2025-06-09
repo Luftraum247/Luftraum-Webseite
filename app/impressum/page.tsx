@@ -32,7 +32,7 @@ export default function ImpressumPage() {
 
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-blue-400">Vertreten durch:</h2>
-                <p className="text-gray-300">Geschäftsführer: Jorge Marques</p>
+                <p className="text-gray-300">Inhaber: Jorge Marques</p>
               </div>
 
               <div>
@@ -41,13 +41,6 @@ export default function ImpressumPage() {
                 <p className="text-gray-300">Mobil: +491631902432</p> 
                 <p className="text-gray-300">E-Mail: marques.jorge@luftraum247.de</p>
                 <p className="text-gray-300">Website: www.luftraum247.de</p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold mb-4 text-blue-400">Registereintrag:</h2>
-                <p className="text-gray-300">Eintragung im Handelsregister.</p>
-                <p className="text-gray-300">Registergericht: Amtsgericht Hannover</p>
-                <p className="text-gray-300">Registernummer: [Handelsregisternummer]</p>
               </div>
 
               <div>

@@ -128,7 +128,7 @@ export default function UeberUnsPage() {
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/jorge-marques-drone.png"
+                src="/LuftraumÜberuns.jpeg"
                 alt="Jorge Marques, Gründer von Luftraum247, mit professioneller Drohne"
                 fill
                 className="object-cover rounded-lg"

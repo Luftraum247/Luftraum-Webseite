@@ -105,7 +105,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Schnelllinks</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/#about" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Link href="/ueber-uns" className="text-gray-400 hover:text-blue-400 transition-colors">
                   Über uns
                 </Link>
               </li>
@@ -117,6 +117,11 @@ export default function Footer() {
               <li>
                 <Link href="/kontakt#faq" className="text-gray-400 hover:text-blue-400 transition-colors">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link href="/projekte" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  Projekte
                 </Link>
               </li>
               <li>

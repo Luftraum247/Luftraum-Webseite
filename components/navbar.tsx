@@ -46,6 +46,16 @@ export default function Navbar() {
               Home
             </Link>
             <Link
+              href="/ueber-uns"
+              className={`relative py-2 text-white hover:text-blue-400 transition-colors ${
+                pathname === "/ueber-uns"
+                  ? "text-blue-400 font-medium after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-400"
+                  : ""
+              }`}
+            >
+              Über uns
+            </Link>
+            <Link
               href="/dienstleistungen"
               className={`relative py-2 text-white hover:text-blue-400 transition-colors ${
                 pathname === "/dienstleistungen"
@@ -54,6 +64,16 @@ export default function Navbar() {
               }`}
             >
               Dienstleistungen
+            </Link>
+            <Link
+              href="/projekte"
+              className={`relative py-2 text-white hover:text-blue-400 transition-colors ${
+                pathname === "/projekte"
+                  ? "text-blue-400 font-medium after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-400"
+                  : ""
+              }`}
+            >
+              Projekte
             </Link>
             <Link
               href="/kontakt"
@@ -97,6 +117,16 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
+                href="/ueber-uns"
+                className={`text-white hover:text-blue-400 transition-colors py-2 ${
+                  pathname === "/ueber-uns"
+                    ? "text-blue-400 font-medium bg-zinc-800 px-3 py-2 rounded-md border-l-4 border-blue-400"
+                    : ""
+                }`}
+              >
+                Über uns
+              </Link>
+              <Link
                 href="/dienstleistungen"
                 className={`text-white hover:text-blue-400 transition-colors py-2 ${
                   pathname === "/dienstleistungen"
@@ -105,6 +135,16 @@ export default function Navbar() {
                 }`}
               >
                 Dienstleistungen
+              </Link>
+              <Link
+                href="/projekte"
+                className={`text-white hover:text-blue-400 transition-colors py-2 ${
+                  pathname === "/projekte"
+                    ? "text-blue-400 font-medium bg-zinc-800 px-3 py-2 rounded-md border-l-4 border-blue-400"
+                    : ""
+                }`}
+              >
+                Projekte
               </Link>
               <Link
                 href="/kontakt"

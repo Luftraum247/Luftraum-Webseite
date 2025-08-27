@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import ServiceAccordion from "@/components/service-accordion"
 import type { Metadata } from "next"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
+import HashNavigator from "@/components/hash-navigator"
 
 export const metadata: Metadata = {
   title: "Dienstleistungen | Luftraum247 - Professionelle Drohneninspektionen",
@@ -353,6 +354,7 @@ export default function DienstleistungenPage() {
 
   return (
     <main className="min-h-screen bg-black text-white pt-20">
+      <HashNavigator />
       <BreadcrumbSchema items={breadcrumbItems} />
 
       {/* Hero Section */}

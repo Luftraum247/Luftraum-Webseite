@@ -34,7 +34,7 @@ export default function Home() {
               </Button>
               <Button
                 variant="outline"
-                className="border-blue-600 text-blue-400 hover:bg-blue-900/20 px-8 py-6 text-lg"
+                className="border-blue-600 text-blue-400 hover:bg-blue-900/20 px-8 py-6 text-lg bg-transparent"
                 asChild
               >
                 <Link href="/kontakt#kontaktformular">Kontakt aufnehmen</Link>

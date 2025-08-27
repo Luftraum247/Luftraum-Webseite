@@ -4,6 +4,7 @@ import ContactForm from "@/components/contact-form"
 import TestimonialsCarousel from "@/components/testimonials-carousel"
 import type { Metadata } from "next"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
+import HashNavigator from "@/components/hash-navigator"
 // Am Anfang der Komponente nach den Imports
 import FAQSchema from "@/components/faq-schema"
 
@@ -46,6 +47,7 @@ export default function KontaktPage() {
 
   return (
     <main className="min-h-screen bg-black text-white pt-20">
+      <HashNavigator />
       <BreadcrumbSchema items={breadcrumbItems} />
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">

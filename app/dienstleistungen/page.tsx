@@ -23,43 +23,63 @@ export default function DienstleistungenPage() {
   // 3D Vermessung und Kartierung
   const vermessungServices = [
     {
-      id: "3d-vermessung-basic",
-      title: "3D-Vermessung Basic",
-      price: "Ab 599€",
-      shortDescription: "Grundpaket für kleinere Projekte bis 5.000m²",
-      image: "/3d-vermessung-kartierung-02.png",
+      id: "2d-paket",
+      title: "2D Paket",
+      price: "Ab €399,-*",
+      shortDescription: "2D Orthomosaik-Erstellung mit RTK-Technologie",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2D%20Paket.jpg-1UdPJLVlI5OVBPShVBAecIBFw7DSuE.jpeg",
       content: `
-        <p>Unser Basic-Paket für 3D-Vermessung und Kartierung bietet präzise Geländemodelle für kleinere Projekte. Ideal für Bauprojekte, Landschaftsplanung und Dokumentation.</p>
+        <p>2D Orthomosaik-Erstellung mit modernster RTK-Technologie für präzise Vermessungen. Aufgrund unterschiedlicher Projektgrößen und Anforderungen erstellen wir individuelle Angebote.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Leistungsumfang:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
-          <li>Hochauflösende Luftaufnahmen</li>
-          <li>3D-Punktwolke-Erstellung</li>
-          <li>Digitales Geländemodell (DGM)</li>
-          <li>Orthofoto-Erstellung</li>
-          <li>Volumenberechnungen</li>
-          <li>CAD-kompatible Datenformate</li>
+          <li>Preisstaffelung nach Flächengröße verfügbar</li>
+          <li>RTK-Technologie mit ±2 cm Genauigkeit</li>
+          <li>Vermessung von Passpunkten (GCP's) enthalten</li>
+          <li>Cloud-Zugang für eigenständige Flächenauswertung</li>
+          <li>Erfassung von Baugrenzen und Störflächen mit Modellintegration</li>
         </ul>
-        <p class="mt-4">Zentimetergenaue Genauigkeit für Ihre Projekte mit modernster Drohnentechnologie.</p>
+        <p class="mt-4">Zentimetergenaue 2D-Orthomosaike für Ihre Projekte mit modernster Drohnentechnologie.</p>
       `,
     },
     {
-      id: "3d-vermessung-premium",
-      title: "3D-Vermessung Premium",
-      price: "Ab 1.299€",
-      shortDescription: "Erweiterte Vermessung für größere Projekte bis 50.000m²",
-      image: "/3d-vermessung-kartierung-02.png",
+      id: "3d-paket",
+      title: "3D Paket",
+      price: "Ab €499,-*",
+      shortDescription: "Erstellen von 3D-Modellen mit RTK-Technologie",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3D%20Paket.jpg-OxhykYxVYTAXR4DcewPlb3Grt59enb.jpeg",
       content: `
-        <p>Premium-Paket für umfassende 3D-Vermessungen größerer Areale mit erweiterten Analysefunktionen und detaillierter Dokumentation.</p>
+        <p>Erstellen von detaillierten 3D-Modellen mit modernster RTK-Technologie. Aufgrund unterschiedlicher Anwendungsgebiete und Projektgrößen erstellen wir individuelle Angebote.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Erweiterte Leistungen:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
-          <li>Alle Basic-Leistungen</li>
-          <li>Detaillierte Höhenlinien-Karten</li>
-          <li>Gefälle- und Neigungsanalysen</li>
-          <li>Digitaler Zwilling-Erstellung</li>
-          <li>GIS-Integration</li>
-          <li>Monatliche Fortschrittsdokumentation</li>
-          <li>Präsentation vor Ort</li>
+          <li>Preisstaffelung nach Flächen-/Gebäudegröße verfügbar</li>
+          <li>RTK-Technologie mit ±2 cm Genauigkeit</li>
+          <li>Vermessung von Passpunkten (GCP's) enthalten</li>
+          <li>Cloud-Zugang für eigenständige 3D-Modell-Betrachtung und -Bearbeitung</li>
+          <li>Erfassung von Baugrenzen und Störflächen mit Modellintegration</li>
         </ul>
+        <p class="mt-4">Hochpräzise 3D-Modelle für umfassende Projektdokumentation und -analyse.</p>
+      `,
+    },
+    {
+      id: "3d-digitales-aufmass",
+      title: "3D Digitales Aufmaß",
+      price: "Auf Anfrage,-*",
+      shortDescription: "Flächen- und Volumenberechnung | DEM",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3D_Vermessung_3D%20Digitales%20Aufma%C3%9F.jpg-oupg7iL3xeTZ7VZYHFrlC4BAvfKOR3.jpeg",
+      content: `
+        <p>Flächen und Volumen- so wie Füllmengenberechnung | DEM. Aufgrund unterschiedlicher Anwendungsgebiete und Projektgrößen erstellen wir individuelle Angebote.</p>
+        <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Spezialisierte Messungen:</h4>
+        <ul class="list-disc pl-5 space-y-1 text-gray-300">
+          <li>Preisgestaltung entsprechend den Inspektionsintervallen</li>
+          <li>RTK-Technologie mit ±2 cm Genauigkeit</li>
+          <li>Vermessung von Passpunkten (GCP's) enthalten</li>
+          <li>Cloud-Zugang für eigenständige Volumenbestimmung</li>
+          <li>Erfassung von Baugrenzen und Störflächen mit Modellintegration</li>
+        </ul>
+        <p class="mt-4">Präzise Volumen- und Flächenberechnungen für Bauprojekte und Materialmanagement.</p>
       `,
     },
   ]

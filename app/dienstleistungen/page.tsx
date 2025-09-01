@@ -381,7 +381,7 @@ export default function DienstleistungenPage() {
       </section>
 
       {/* 3D Vermessung und Kartierung Section */}
-      <section className="py-16 bg-black" id="3d-vermessung">
+      <section className="py-16 bg-black" id="vermessung-3d">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4 text-center">3D Vermessung und Kartierung</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
@@ -526,6 +526,146 @@ export default function DienstleistungenPage() {
                 image={service.image}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Weitere Dienstleistungen Section */}
+      <section className="py-20 bg-black" id="weitere-dienstleistungen">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Weitere Dienstleistungen</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
+            Innovative Lösungen und spezialisierte Services für besondere Anforderungen
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Freiwillige Katastrophenhilfe */}
+            <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
+              <div className="h-64 relative overflow-hidden">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Notfall-%20und%20Katastrophenmanagement%20%281%29-bfprVNp2wldUkRgdFxZIZjt4gtP08G.png"
+                  alt="Freiwillige Katastrophenhilfe mit Drohnentechnologie für Notfallmanagement und Rettungseinsätze"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
+              </div>
+              <div className="p-6 relative">
+                <div className="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 rounded-bl-md text-sm font-medium">
+                  Ehrenamtlich
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-red-400">Freiwillige Katastrophenhilfe</h3>
+                <p className="text-gray-300 mb-4">
+                  Professionelle Drohnenunterstützung für Rettungskräfte und Behörden bei Notfällen, Katastrophen und
+                  Such- und Rettungseinsätzen - kostenlos für gemeinnützige Zwecke.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-red-400 font-semibold">24/7 Notfall-Hotline</span>
+                  <Link
+                    href="/kontakt#kontaktformular"
+                    className="text-red-400 hover:text-red-300 font-medium transition-colors"
+                  >
+                    Mehr herausfinden →
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Coming Soon - Baustellen Kamera */}
+            <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
+              <div className="h-64 relative overflow-hidden">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%282%29-3U73id1OWAALKkJfeClucDTBfxBgH6.png"
+                  alt="Coming Soon: Professionelle Baustellen-Kameras für 24/7 Baufortschrittsdokumentation"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
+              </div>
+              <div className="p-6 relative">
+                <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-md text-sm font-medium">
+                  Coming Soon
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-blue-400">Baustellen-Kamera</h3>
+                <p className="text-gray-300 mb-4">
+                  Intelligente Zeitraffer-Kameras für lückenlose Baufortschrittsdokumentation. 4K-Qualität rund um die
+                  Uhr mit Cloud-Zugriff und automatischer Zeitraffer-Erstellung.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-blue-400 font-semibold">Verfügbar Q4 2025</span>
+                  <Link
+                    href="/kontakt#kontaktformular"
+                    className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                  >
+                    Mehr herausfinden →
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Coming Soon - Riss Monitoring */}
+            <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
+              <div className="h-64 relative overflow-hidden">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image%20%284%29-LMvh6fPpL5tmGLaYYY6MiuUbWoekiW.png"
+                  alt="Coming Soon: Professionelles Riss-Monitoring für Gebäude und Bauwerke mit Drohnentechnologie"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
+              </div>
+              <div className="p-6 relative">
+                <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-md text-sm font-medium">
+                  Coming Soon
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-blue-400">Riss-Monitoring mit Drohne</h3>
+                <p className="text-gray-300 mb-4">
+                  Kontinuierliche Überwachung struktureller Integrität von Bauwerken. Millimeterpräzise Messungen und
+                  Frühwarnsystem für kritische Veränderungen an schwer zugänglichen Stellen.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-blue-400 font-semibold">Verfügbar Q1 2026</span>
+                  <Link
+                    href="/kontakt#kontaktformular"
+                    className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                  >
+                    Mehr herausfinden →
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Coming Soon - Reinigungsdrohne */}
+            <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
+              <div className="h-64 relative overflow-hidden">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/595bf4ce-760f-4f06-8f2c-85ae4837bb09-2.jpg-bjnrCPMXq4pbahk3LQyHtBFRR5F945.jpeg"
+                  alt="Coming Soon: Revolutionäre Reinigungsdrohne für Fassaden und Hochbauten"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
+              </div>
+              <div className="p-6 relative">
+                <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-md text-sm font-medium">
+                  Coming Soon
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-blue-400">Reinigungsdrohne</h3>
+                <p className="text-gray-300 mb-4">
+                  Revolutionäre DJI M300 RTK Reinigungsdrohne für Fassaden und Hochbauten. Bis zu 90% Kostenersparnis
+                  gegenüber herkömmlichen Gerüst- und Kletterlösungen.
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-blue-400 font-semibold">Verfügbar Q4 2025</span>
+                  <Link
+                    href="/kontakt#kontaktformular"
+                    className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                  >
+                    Mehr herausfinden →
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

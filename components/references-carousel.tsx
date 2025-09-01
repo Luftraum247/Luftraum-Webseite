@@ -56,6 +56,36 @@ const references = [
     logo: "/logos/mul-ohlendorf-logo.webp",
     alt: "Mul & Ohlendorf - Performance im Galabau Logo",
   },
+  {
+    name: "Toyota Material Handling",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20200608-Toyota-Material-Handling-logo.jpg-SyNAqYuFgkTgS49DiIWzHV17RfgS3n.jpeg",
+    alt: "Toyota Material Handling Logo",
+  },
+  {
+    name: "Toyota Material Handling",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Toyota_Material-3-Zj6na9SI6gvD0wsNrGa1ecj9r37Wg9.png",
+    alt: "Toyota Material Handling Logo - Dark Version",
+  },
+  {
+    name: "The Bahlsen Family",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/the-bahlsen-family-logo-743x545.jpg-t4adKJJmNvLohCiQlBP7wrEIZECJ2n.jpeg",
+    alt: "The Bahlsen Family Logo",
+  },
+  {
+    name: "Toyota Material Handling",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ToyotaMaterialHandling-fNvN5JkvprZZHUggATyJyFR1aXJImb.png",
+    alt: "Toyota Material Handling Logo - Orange Version",
+  },
+  {
+    name: "Burghardt Dach",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image001.jpg-XHxjD20zxFlKCYOzOMOBqhJ6IgAJt5.jpeg",
+    alt: "Burghardt Dach Logo - Text Version",
+  },
+  {
+    name: "The Bahlsen Family",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Markenzeichen_TBF_M_CMYK_neg_4c.jpg-gHxa5u513eDAFrdOf1FoE2YGMJDJy9.jpeg",
+    alt: "The Bahlsen Family Logo - Blue Background",
+  },
 ]
 
 export default function ReferencesCarousel() {

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import ProvenExpertSeal from "./proven-expert-seal"
 
 export default function Footer() {
   return (
@@ -115,13 +116,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/kontakt#faq" className="text-gray-400 hover:text-blue-400 transition-colors">
-                  FAQ
+                <Link href="/projekte" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  Projekte
                 </Link>
               </li>
               <li>
-                <Link href="/projekte" className="text-gray-400 hover:text-blue-400 transition-colors">
-                  Projekte
+                <Link href="/kontakt#faq" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  FAQ
                 </Link>
               </li>
               <li>
@@ -137,27 +138,28 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Trust Signals */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Kontakt</h3>
-            <ul className="space-y-4">
+            <h3 className="text-lg font-semibold mb-6">Kontakt & Bewertungen</h3>
+            <ul className="space-y-4 mb-6">
               <li className="flex">
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0 mt-1" />
                 <span className="text-gray-400">Schäfertrift 19, 30657 Hannover</span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400">Festnetz: +49 51199922127</span>
-              </li>
-              <li className="flex">
-                <Phone className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400">Mobil: +49 1631902432</span>
+                <span className="text-gray-400">+49 (0) 123 456789</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 text-blue-400 mr-3 flex-shrink-0" />
                 <span className="text-gray-400">info@luftraum247.de</span>
               </li>
             </ul>
+
+            {/* ProvenExpert Seal in Footer */}
+            <div className="mt-6">
+              <ProvenExpertSeal />
+            </div>
           </div>
         </div>
 

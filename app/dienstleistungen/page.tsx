@@ -657,15 +657,15 @@ export default function DienstleistungenPage() {
 
             {/* Coming Soon - Reinigungsdrohne */}
             <div className="bg-zinc-800 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] group">
-              <div className="h-64 relative overflow-hidden">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/595bf4ce-760f-4f06-8f2c-85ae4837bb09-2.jpg-bjnrCPMXq4pbahk3LQyHtBFRR5F945.jpeg"
-                  alt="Coming Soon: Revolutionäre Reinigungsdrohne für Fassaden und Hochbauten"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
-              </div>
+            <div className="h-64 relative overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/595bf4ce-760f-4f06-8f2c-85ae4837bb09-2.jpg-bjnrCPMXq4pbahk3LQyHtBFRR5F945.jpeg"
+                alt="Coming Soon: Revolutionäre Reinigungsdrohne für Fassaden und Hochbauten"
+                fill
+                className="object-cover object-top md:object-[50%_35%] group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
+            </div>
               <div className="p-6 relative">
                 <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-md text-sm font-medium">
                   Coming Soon

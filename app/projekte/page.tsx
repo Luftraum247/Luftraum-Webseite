@@ -67,7 +67,7 @@ const projects = [
       </ul>
       <p class="mt-4">Mit modernster DJI Matrice M30T Technologie und professioneller Reinigungsausrüstung konnte eine messbare Leistungssteigerung der Solaranlage erreicht werden.</p>
     `,
-    image: "/ProjektBahlsen1.jpeg",
+    image: "/ProjektBahlsen1.JPEG",
     tags: ["85% Verbesserung", "VDE 0126-23-1", "DJI Matrice M30T", "Solar Care Plus", "Bahlsen"],
   },
 ]

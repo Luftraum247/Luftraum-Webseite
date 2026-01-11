@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ScrollToTop from "@/components/scroll-to-top"
 import SchemaOrg from "@/components/schema-org"
+import StickyContactBar from "@/components/sticky-contact-bar"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="de" className="scroll-smooth">
       <body className={inter.className}>
         <Navbar />
+        <StickyContactBar />
         {children}
         <Footer />
         <ScrollToTop />

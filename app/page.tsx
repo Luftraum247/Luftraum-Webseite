@@ -4,6 +4,7 @@ import { ChevronRight, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ReferencesCarousel from "@/components/references-carousel"
 import FAQSchema from "@/components/faq-schema"
+import ProvenExpertSeal from "@/components/proven-expert-seal"
 
 export default function Home() {
   const faqItems = [
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-start lg:items-center overflow-hidden pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-0 lg:pb-0">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-05-14%20at%2015.43.33-3KtdDhV59Gizi59JyoUP1O3huMVcfq.png"
@@ -44,25 +45,32 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black"></div>
         </div>
 
-        <div className="container mx-auto px-4 z-10 relative">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Drohnengestützte PVThermografie & Bauinspektionen in Hannover
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              DIN/IECkonform mit 24/48h Reaktionszeit.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg" asChild>
-                <Link href="/dienstleistungen">Unsere Dienstleistungen</Link>
-              </Button>
-              <Button
-                variant="outline"
-                className="border-blue-600 text-blue-400 hover:bg-blue-900/20 px-8 py-6 text-lg bg-transparent"
-                asChild
-              >
-                <Link href="/kontakt#kontaktformular">Angebot in 24h erhalten</Link>
-              </Button>
+        <div className="container mx-auto px-4 z-10 relative py-0">
+          <div className="flex flex-col lg:grid lg:grid-cols-[1fr,auto] gap-8 lg:items-center">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                Drohnengestützte PVThermografie & Bauinspektionen in Hannover
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-gray-300">
+                DIN/IECkonform mit 24/48h Reaktionszeit.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-0">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg" asChild>
+                  <Link href="/dienstleistungen">Unsere Dienstleistungen</Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-blue-600 text-blue-400 hover:bg-blue-900/20 px-8 py-6 text-lg bg-transparent"
+                  asChild
+                >
+                  <Link href="/kontakt#kontaktformular">Angebot in 24h erhalten</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* ProvenExpert Seal - bottom on mobile, right side on desktop */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 lg:p-6 max-w-sm mx-auto lg:mx-0 mb-8 lg:mb-0">
+              <ProvenExpertSeal />
             </div>
           </div>
         </div>

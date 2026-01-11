@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import emailjs from "emailjs-com" 
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CheckCircle2, AlertCircle } from "lucide-react"
+import { CheckCircle2, AlertCircle, ChevronDown, ChevronUp } from "lucide-react"
 import { FormField } from "@/components/ui/form"
 import { DatePickerField } from "@/components/ui/date-picker-field"
 
@@ -36,11 +36,12 @@ export default function ContactForm() {
   const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">("idle")
   const [errors, setErrors] = useState<FormErrors>({})
   const [touchedFields, setTouchedFields] = useState<Set<string>>(new Set())
+  const [showOptionalFields, setShowOptionalFields] = useState(false)
 
   // Validate form whenever formState changes or a field is touched
   useEffect(() => {
     validateForm()
-  }, [formState, touchedFields])
+  }, [formState, touchedFields, showOptionalFields])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -53,9 +54,13 @@ export default function ContactForm() {
     if (!name.trim()) newErrors.name = "Name ist erforderlich"
     if (!email.trim()) newErrors.email = "E-Mail ist erforderlich"
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) newErrors.email = "Ungültige E-Mail-Adresse"
-    if (!companyType) newErrors.companyType = "Bitte wählen Sie eine Option"
     if (!service) newErrors.service = "Bitte wählen Sie eine Dienstleistung"
-    if (!message.trim()) newErrors.message = "Nachricht ist erforderlich"
+    
+    // Only validate optional fields if they are shown
+    if (showOptionalFields) {
+      if (!companyType) newErrors.companyType = "Bitte wählen Sie eine Option"
+      if (!message.trim()) newErrors.message = "Nachricht ist erforderlich"
+    }
 
     setErrors(newErrors)
 
@@ -127,21 +132,24 @@ export default function ContactForm() {
       }
     }
 
-    if (touchedFields.has("companyType")) {
-      if (!companyType) {
-        newErrors.companyType = "Bitte wählen Sie eine Option"
-      }
-    }
-
     if (touchedFields.has("service")) {
       if (!service) {
         newErrors.service = "Bitte wählen Sie eine Dienstleistung"
       }
     }
 
-    if (touchedFields.has("message")) {
-      if (!message.trim()) {
-        newErrors.message = "Nachricht ist erforderlich"
+    // Only validate optional fields if they are shown
+    if (showOptionalFields) {
+      if (touchedFields.has("companyType")) {
+        if (!companyType) {
+          newErrors.companyType = "Bitte wählen Sie eine Option"
+        }
+      }
+
+      if (touchedFields.has("message")) {
+        if (!message.trim()) {
+          newErrors.message = "Nachricht ist erforderlich"
+        }
       }
     }
 
@@ -326,33 +334,6 @@ export default function ContactForm() {
           </FormField>
         </div>
 
-        <FormField
-          name="companyType"
-          label="Was beschreibt Ihr Unternehmen am besten?"
-          required={true}
-          error={errors.companyType}
-        >
-          <Select value={formState.companyType} onValueChange={(value) => handleSelectChange("companyType", value)}>
-            <SelectTrigger
-              className={`bg-zinc-700 border-zinc-600 focus:border-blue-500 ${
-                errors.companyType ? "border-red-500 focus:border-red-500" : ""
-              }`}
-            >
-              <SelectValue placeholder="Bitte wählen Sie eine Option" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="immobilien">Immobilien</SelectItem>
-              <SelectItem value="industrie">Industrie</SelectItem>
-              <SelectItem value="energieversorger">Energieversorger</SelectItem>
-              <SelectItem value="solarparkbetreiber">Solarparkbetreiber</SelectItem>
-              <SelectItem value="solateur">Solateur</SelectItem>
-              <SelectItem value="ingenieurdienstleistungen">Ingenieurdienstleistungen Unternehmen</SelectItem>
-              <SelectItem value="energiedienstleistungen">Energie Dienstleistungsunternehmen</SelectItem>
-              <SelectItem value="andere">Andere</SelectItem>
-            </SelectContent>
-          </Select>
-        </FormField>
-
         <FormField name="service" label="Gewünschte Dienstleistung" required={true} error={errors.service}>
           <Select value={formState.service} onValueChange={(value) => handleSelectChange("service", value)}>
             <SelectTrigger
@@ -373,7 +354,58 @@ export default function ContactForm() {
           </Select>
         </FormField>
 
-        <FormField name="message" label="Ihre Nachricht" required={true} error={errors.message}>
+        {/* Toggle for optional fields */}
+        <div>
+          <button
+            type="button"
+            onClick={() => setShowOptionalFields(!showOptionalFields)}
+            className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors py-2"
+          >
+            {showOptionalFields ? (
+              <>
+                <ChevronUp className="h-5 w-5" />
+                <span>Zusätzliche Felder ausblenden</span>
+              </>
+            ) : (
+              <>
+                <ChevronDown className="h-5 w-5" />
+                <span>Zusätzliche Felder anzeigen (optional)</span>
+              </>
+            )}
+          </button>
+        </div>
+
+        {/* Optional fields */}
+        {showOptionalFields && (
+          <>
+            <FormField
+              name="companyType"
+              label="Was beschreibt Ihr Unternehmen am besten?"
+              required={false}
+              error={errors.companyType}
+            >
+              <Select value={formState.companyType} onValueChange={(value) => handleSelectChange("companyType", value)}>
+                <SelectTrigger
+                  className={`bg-zinc-700 border-zinc-600 focus:border-blue-500 ${
+                    errors.companyType ? "border-red-500 focus:border-red-500" : ""
+                  }`}
+                >
+                  <SelectValue placeholder="Bitte wählen Sie eine Option" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="immobilien">Immobilien</SelectItem>
+                  <SelectItem value="industrie">Industrie</SelectItem>
+                  <SelectItem value="energieversorger">Energieversorger</SelectItem>
+                  <SelectItem value="solarparkbetreiber">Solarparkbetreiber</SelectItem>
+                  <SelectItem value="solateur">Solateur</SelectItem>
+                  <SelectItem value="ingenieurdienstleistungen">Ingenieurdienstleistungen Unternehmen</SelectItem>
+                  <SelectItem value="energiedienstleistungen">Energie Dienstleistungsunternehmen</SelectItem>
+                  <SelectItem value="andere">Andere</SelectItem>
+                </SelectContent>
+              </Select>
+            </FormField>
+
+            <FormField name="message" label="Ihre Nachricht" required={false} error={errors.message}>
           <Textarea
             id="message"
             name="message"
@@ -388,19 +420,21 @@ export default function ContactForm() {
           />
         </FormField>
 
-        <FormField
-          name="selectedDates"
-          label="Bevorzugte Termine (optional)"
-          required={false}
-          error={errors.selectedDates}
-        >
-          <div className="mt-2">
-            <DatePickerField selectedDates={formState.selectedDates} onChange={handleDateChange} maxDates={3} />
-            <p className="text-xs text-gray-400 mt-2">
-              Wählen Sie bis zu 3 bevorzugte Termine für einen Beratungstermin oder die Durchführung der Dienstleistung.
-            </p>
-          </div>
-        </FormField>
+            <FormField
+              name="selectedDates"
+              label="Bevorzugte Termine (optional)"
+              required={false}
+              error={errors.selectedDates}
+            >
+              <div className="mt-2">
+                <DatePickerField selectedDates={formState.selectedDates} onChange={handleDateChange} maxDates={3} />
+                <p className="text-xs text-gray-400 mt-2">
+                  Wählen Sie bis zu 3 bevorzugte Termine für einen Beratungstermin oder die Durchführung der Dienstleistung.
+                </p>
+              </div>
+            </FormField>
+          </>
+        )}
 
         <div className="space-y-4">
           <Button

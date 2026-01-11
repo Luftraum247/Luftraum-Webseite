@@ -7,11 +7,11 @@ import BreadcrumbSchema from "@/components/breadcrumb-schema"
 import HashNavigator from "@/components/hash-navigator"
 
 export const metadata: Metadata = {
-  title: "Dienstleistungen | Luftraum247 - Professionelle Drohneninspektionen",
+  title: "Drohnen-Dienstleistungen Hannover | Luftraum247 - Professionelle Inspektionen",
   description:
-    "Entdecken Sie unser umfassendes Angebot an Drohnen-Dienstleistungen: 3D-Vermessung, Thermografie, Industrie-Inspektionen, Bau-Inspektionen, Indoor-Flüge und Luftbildfotografie.",
+    "Professionelle Drohnen-Dienstleistungen in Hannover und Region: 3D-Vermessung, Thermografie, Industrie-Inspektionen, Bau-Inspektionen, Indoor-Flüge und Luftbildfotografie. Ihr lokaler Experte für Drohneninspektionen.",
   keywords:
-    "3D-Vermessung, Thermografie, Industrie-Inspektionen, Bau-Inspektionen, Indoor-Flüge, Luftbildfotografie, Drohneninspektionen",
+    "3D-Vermessung Hannover, Thermografie Hannover, Industrie-Inspektionen Hannover, Bau-Inspektionen Hannover, Indoor-Flüge Hannover, Luftbildfotografie Hannover, Drohneninspektionen Hannover",
 }
 
 export default function DienstleistungenPage() {
@@ -24,13 +24,13 @@ export default function DienstleistungenPage() {
   const vermessungServices = [
     {
       id: "2d-paket",
-      title: "2D Paket",
+      title: "2D Paket Hannover",
       price: "Ab €399,-*",
-      shortDescription: "2D Orthomosaik-Erstellung mit RTK-Technologie",
+      shortDescription: "2D Orthomosaik-Erstellung mit RTK-Technologie in Hannover",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2D%20Paket.jpg-1UdPJLVlI5OVBPShVBAecIBFw7DSuE.jpeg",
       content: `
-        <p>2D Orthomosaik-Erstellung mit modernster RTK-Technologie für präzise Vermessungen. Aufgrund unterschiedlicher Projektgrößen und Anforderungen erstellen wir individuelle Angebote.</p>
+        <p>Professionelle 2D Orthomosaik-Erstellung in Hannover mit modernster RTK-Technologie für präzise Vermessungen. Als lokaler Experte für Drohnenvermessung in der Region Hannover erstellen wir individuelle Angebote für unterschiedliche Projektgrößen und Anforderungen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Leistungsumfang:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Preisstaffelung nach Flächengröße verfügbar</li>
@@ -39,18 +39,18 @@ export default function DienstleistungenPage() {
           <li>Cloud-Zugang für eigenständige Flächenauswertung</li>
           <li>Erfassung von Baugrenzen und Störflächen mit Modellintegration</li>
         </ul>
-        <p class="mt-4">Zentimetergenaue 2D-Orthomosaike für Ihre Projekte mit modernster Drohnentechnologie.</p>
+        <p class="mt-4">Zentimetergenaue 2D-Orthomosaike für Ihre Projekte in Hannover und Umgebung mit modernster Drohnentechnologie.</p>
       `,
     },
     {
       id: "3d-paket",
-      title: "3D Paket",
+      title: "3D Paket Hannover",
       price: "Ab €499,-*",
-      shortDescription: "Erstellen von 3D-Modellen mit RTK-Technologie",
+      shortDescription: "Erstellen von 3D-Modellen mit RTK-Technologie in Hannover",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3D%20Paket.jpg-OxhykYxVYTAXR4DcewPlb3Grt59enb.jpeg",
       content: `
-        <p>Erstellen von detaillierten 3D-Modellen mit modernster RTK-Technologie. Aufgrund unterschiedlicher Anwendungsgebiete und Projektgrößen erstellen wir individuelle Angebote.</p>
+        <p>Professionelle 3D-Modellierung in Hannover mit modernster RTK-Technologie. Als Ihr lokaler Partner für 3D-Vermessung in der Region Hannover erstellen wir detaillierte 3D-Modelle für verschiedene Anwendungsgebiete und Projektgrößen mit individuellen Angeboten.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Erweiterte Leistungen:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Preisstaffelung nach Flächen-/Gebäudegröße verfügbar</li>
@@ -59,18 +59,18 @@ export default function DienstleistungenPage() {
           <li>Cloud-Zugang für eigenständige 3D-Modell-Betrachtung und -Bearbeitung</li>
           <li>Erfassung von Baugrenzen und Störflächen mit Modellintegration</li>
         </ul>
-        <p class="mt-4">Hochpräzise 3D-Modelle für umfassende Projektdokumentation und -analyse.</p>
+        <p class="mt-4">Hochpräzise 3D-Modelle für umfassende Projektdokumentation und -analyse in Hannover.</p>
       `,
     },
     {
       id: "3d-digitales-aufmass",
-      title: "3D Digitales Aufmaß",
+      title: "3D Digitales Aufmaß Hannover",
       price: "Auf Anfrage,-*",
-      shortDescription: "Flächen- und Volumenberechnung | DEM",
+      shortDescription: "Flächen- und Volumenberechnung in Hannover | DEM",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3D_Vermessung_3D%20Digitales%20Aufma%C3%9F.jpg-oupg7iL3xeTZ7VZYHFrlC4BAvfKOR3.jpeg",
       content: `
-        <p>Flächen und Volumen- so wie Füllmengenberechnung | DEM. Aufgrund unterschiedlicher Anwendungsgebiete und Projektgrößen erstellen wir individuelle Angebote.</p>
+        <p>Professionelle Flächen-, Volumen- und Füllmengenberechnung | DEM in Hannover und Region. Als Ihr lokaler Experte für digitales Aufmaß erstellen wir individuelle Angebote für unterschiedliche Anwendungsgebiete und Projektgrößen in Hannover.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Spezialisierte Messungen:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Preisgestaltung entsprechend den Inspektionsintervallen</li>
@@ -79,7 +79,7 @@ export default function DienstleistungenPage() {
           <li>Cloud-Zugang für eigenständige Volumenbestimmung</li>
           <li>Erfassung von Baugrenzen und Störflächen mit Modellintegration</li>
         </ul>
-        <p class="mt-4">Präzise Volumen- und Flächenberechnungen für Bauprojekte und Materialmanagement.</p>
+        <p class="mt-4">Präzise Volumen- und Flächenberechnungen für Bauprojekte und Materialmanagement in der Region Hannover.</p>
       `,
     },
   ]
@@ -88,13 +88,13 @@ export default function DienstleistungenPage() {
   const thermografieServices = [
     {
       id: "pv-thermografie-basis",
-      title: "PV-Thermografie Basis",
+      title: "PV-Thermografie Basis Hannover",
       price: "Ab 199€ (Privat) / Ab 299€ (Gewerblich)",
-      shortDescription: "Für Einfamilienhäuser und Kleingewerbe mit 0-20kWp",
+      shortDescription: "PV-Thermografie für Einfamilienhäuser und Kleingewerbe mit 0-20kWp in Hannover",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI-M30-Profi-Drohne-im-Test-13.jpg-JhAu9YaJULprA1Ue3Ok4GtZCr6C8Ec.jpeg",
       content: `
-        <p>Basis Paket für Einfamilienhäuser und Kleingewerbe mit 0-20kWp nach DIN VDE V 0126-23-3 (Thermografie). Preise abhängig von der Anzahl an kWp der PV-Anlage.</p>
+        <p>Professionelle PV-Thermografie in Hannover - Basis Paket für Einfamilienhäuser und Kleingewerbe mit 0-20kWp nach DIN VDE V 0126-23-3 (Thermografie). Als Ihr lokaler Thermografie-Experte in Hannover bieten wir Preise abhängig von der Anzahl an kWp der PV-Anlage.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Leistungsumfang:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Thermografische Inspektion der kompletten Anlage</li>
@@ -107,12 +107,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "gebaude-thermografie",
-      title: "Gebäude-Thermografie",
+      title: "Gebäude-Thermografie Hannover",
       price: "Ab 499€",
-      shortDescription: "Energieeffizienz-Analyse für Gebäude bis 5000m²",
+      shortDescription: "Energieeffizienz-Analyse für Gebäude bis 5000m² in Hannover",
       image: "/thermal-drone-inspection.png",
       content: `
-        <p>Professionelle Gebäude-Thermografie zur Identifikation von Wärmeverlusten und Energieeffizienz-Optimierung.</p>
+        <p>Professionelle Gebäude-Thermografie in Hannover und Region zur Identifikation von Wärmeverlusten und Energieeffizienz-Optimierung. Als lokaler Experte für Thermografie bieten wir umfassende Wärmebildanalysen in der Region Hannover.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Anwendungsbereiche:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Energieeffizienz-Analyse</li>
@@ -122,17 +122,17 @@ export default function DienstleistungenPage() {
           <li>Immobilienbewertung</li>
           <li>EnEV-Nachweise</li>
         </ul>
-        <p class="mt-4">Bis zu 15% Heizkosten-Reduzierung durch professionelle Wärmebildanalyse.</p>
+        <p class="mt-4">Bis zu 15% Heizkosten-Reduzierung durch professionelle Wärmebildanalyse in Hannover.</p>
       `,
     },
     {
       id: "solar-care-plus",
-      title: "Solar Care Plus",
+      title: "Solar Care Plus Hannover",
       price: "Preis nach Anfrage",
-      shortDescription: "Rundum-Sorglos-Paket für PV-Anlagen",
+      shortDescription: "Rundum-Sorglos-Paket für PV-Anlagen in Hannover",
       image: "/solar-thermal-inspection.webp",
       content: `
-        <p>Solar Care Plus - Ihr Rundum-Sorglos-Paket für PV-Anlagen mit modernster Drohnentechnologie.</p>
+        <p>Solar Care Plus Hannover - Ihr Rundum-Sorglos-Paket für PV-Anlagen in der Region Hannover mit modernster Drohnentechnologie. Als lokaler Experte für Solaranlagen-Wartung bieten wir umfassenden Service.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Komplettpaket beinhaltet:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Drohnengestützte Thermografie-Inspektion</li>
@@ -150,12 +150,12 @@ export default function DienstleistungenPage() {
   const industrieServices = [
     {
       id: "industrycheck-medium",
-      title: "IndustryCheck Medium",
+      title: "IndustryCheck Medium Hannover",
       price: "Ab 599€",
-      shortDescription: "Monatliche Inspektion für Industrieanlagen bis 15.000m²",
+      shortDescription: "Monatliche Inspektion für Industrieanlagen bis 15.000m² in Hannover",
       image: "/wind-turbine-inspection.jpeg",
       content: `
-        <p>Grundpaket für regelmäßige Industrieanlagen-Inspektionen mit modernster Drohnentechnologie.</p>
+        <p>Professionelle Industrieanlagen-Inspektionen in Hannover - Grundpaket für regelmäßige Inspektionen mit modernster Drohnentechnologie. Als lokaler Experte für Industrie-Inspektionen in der Region Hannover bieten wir zuverlässigen Service.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Inspektionsschwerpunkte:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Dachinspektion</li>
@@ -169,13 +169,13 @@ export default function DienstleistungenPage() {
     },
     {
       id: "powergrid-check",
-      title: "PowerGrid Check",
+      title: "PowerGrid Check Hannover",
       price: "Ab 99€ pro Mast",
-      shortDescription: "Hochspannungsmasten-Inspektionspaket",
+      shortDescription: "Hochspannungsmasten-Inspektion in Hannover und Region",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dji-matrice-m30t-hochspannungsnetz-p5rp0GUZ1lfcXKsofC0u9IEqs3dIS3.webp",
       content: `
-        <p>Spezialisierte Inspektion von Hochspannungsmasten und Energieinfrastruktur.</p>
+        <p>Spezialisierte Inspektion von Hochspannungsmasten und Energieinfrastruktur in Hannover und der Region. Als Ihr lokaler Partner für Energieinfrastruktur-Inspektionen bieten wir professionelle Drohnendienstleistungen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Inspektionstechnologien:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Hochauflösende 4K/8K Aufnahmen</li>
@@ -189,12 +189,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "windcheck-premium",
-      title: "WindCheck Premium",
+      title: "WindCheck Premium Hannover",
       price: "Ab 599€ pro WEA",
-      shortDescription: "Rotorblatt-Inspektionspaket für Windenergieanlagen",
+      shortDescription: "Rotorblatt-Inspektion für Windenergieanlagen in Hannover",
       image: "/wind-turbine-inspection.jpeg",
       content: `
-        <p>Detaillierte Inspektion von Windenergieanlagen mit automatisierter Schadenserfassung.</p>
+        <p>Professionelle Windenergieanlagen-Inspektion in Hannover und Region mit automatisierter Schadenserfassung. Als lokaler Experte für WEA-Inspektionen bieten wir detaillierte Rotorblatt-Analysen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Schadenserkennung:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Leading Edge Erosion</li>
@@ -212,12 +212,12 @@ export default function DienstleistungenPage() {
   const bauServices = [
     {
       id: "bauwerkspruefung-vdi6200",
-      title: "Bauwerksprüfung nach VDI 6200",
+      title: "Bauwerksprüfung nach VDI 6200 Hannover",
       price: "Ab 449€",
-      shortDescription: "Revolution in der Bauwerksprüfung durch Drohnentechnologie",
+      shortDescription: "Professionelle Bauwerksprüfung durch Drohnentechnologie in Hannover",
       image: "/drone-building-inspection.png",
       content: `
-        <p>VDI 6200-konforme Inspektionen mit höchster Präzision bei maximaler Kosteneffizienz.</p>
+        <p>VDI 6200-konforme Inspektionen in Hannover und Region mit höchster Präzision bei maximaler Kosteneffizienz. Als Ihr lokaler Experte für Bauwerksprüfungen bieten wir professionelle Drohneninspektionen in der Region Hannover.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">VDI 6200 Leistungen:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Systematische Überprüfung der Standsicherheit</li>
@@ -231,12 +231,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "infracheck-complete",
-      title: "InfraCheck Complete",
+      title: "InfraCheck Complete Hannover",
       price: "Ab 799€",
-      shortDescription: "Umfassendes Infrastruktur-Inspektionspaket",
+      shortDescription: "Umfassendes Infrastruktur-Inspektionspaket in Hannover",
       image: "/aerial-industrial-view.webp",
       content: `
-        <p>Umfassende Inspektion von Infrastrukturbauwerken mit modernster Drohnentechnologie.</p>
+        <p>Umfassende Inspektion von Infrastrukturbauwerken in Hannover und Region mit modernster Drohnentechnologie. Als lokaler Partner für Infrastruktur-Inspektionen in Hannover bieten wir professionelle Analysen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Inspektionsobjekte:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Brücken & Viadukte</li>
@@ -250,12 +250,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "immobilien-inspektion",
-      title: "Immobilien-Inspektion",
+      title: "Immobilien-Inspektion Hannover",
       price: "Ab 299€",
-      shortDescription: "Detaillierte Gebäudeinspektionen ohne Gerüste",
+      shortDescription: "Detaillierte Gebäudeinspektionen ohne Gerüste in Hannover",
       image: "/drone-building-inspection.png",
       content: `
-        <p>Professionelle Immobilieninspektionen für Bewertungen, Kaufentscheidungen und Schadensbegutachtung.</p>
+        <p>Professionelle Immobilieninspektionen in Hannover für Bewertungen, Kaufentscheidungen und Schadensbegutachtung. Als lokaler Experte für Immobilien-Inspektionen in der Region Hannover bieten wir umfassende Analysen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Anwendungsbereiche:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Immobilienbewertungen</li>
@@ -273,12 +273,12 @@ export default function DienstleistungenPage() {
   const indoorServices = [
     {
       id: "indoor-inspektion-basic",
-      title: "Indoor-Inspektion Basic",
+      title: "Indoor-Inspektion Basic Hannover",
       price: "Ab 399€",
-      shortDescription: "Grundpaket für Innenraum-Inspektionen",
+      shortDescription: "Grundpaket für Innenraum-Inspektionen in Hannover",
       image: "/indoor-inspection-drones.webp",
       content: `
-        <p>Spezialisierte Drohnenflüge in Innenräumen für Inspektionen und Dokumentation schwer zugänglicher Bereiche.</p>
+        <p>Spezialisierte Indoor-Drohnenflüge in Hannover für Inspektionen und Dokumentation schwer zugänglicher Bereiche. Als lokaler Experte für Indoor-Inspektionen in der Region Hannover bieten wir professionelle Drohnendienstleistungen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Einsatzgebiete:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Industriehallen</li>
@@ -292,12 +292,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "rauchmelder-pruefung",
-      title: "Rauchmelderprüfung nach DIN 14676",
+      title: "Rauchmelderprüfung nach DIN 14676 Hannover",
       price: "Ab 299€",
-      shortDescription: "Innovative Hybrid-Lösung für Großbetriebe",
+      shortDescription: "Innovative Hybrid-Lösung für Großbetriebe in Hannover",
       image: "/indoor-smoke-detector.webp",
       content: `
-        <p>Revolutionäre Hybrid-Lösung für die normgerechte Prüfung von Rauchwarnmeldern mit minimaler Betriebsstörung.</p>
+        <p>Revolutionäre Hybrid-Lösung für die normgerechte Prüfung von Rauchwarnmeldern in Hannover mit minimaler Betriebsstörung. Als Ihr lokaler Partner für Rauchmelderprüfung in der Region Hannover bieten wir innovative Lösungen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Hybrid-Inspektionsmodell:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Drohnengestützte Ersterfassung</li>
@@ -315,12 +315,12 @@ export default function DienstleistungenPage() {
   const luftbildServices = [
     {
       id: "luftbild-basic",
-      title: "Luftbildfotografie Basic",
+      title: "Luftbildfotografie Basic Hannover",
       price: "Ab 199€",
-      shortDescription: "Hochwertige Luftaufnahmen für Marketing und Dokumentation",
+      shortDescription: "Hochwertige Luftaufnahmen für Marketing und Dokumentation in Hannover",
       image: "/dji-inspire-2.png",
       content: `
-        <p>Professionelle Luftaufnahmen für Marketing, Immobilienpräsentationen und Dokumentation.</p>
+        <p>Professionelle Luftaufnahmen in Hannover und Region für Marketing, Immobilienpräsentationen und Dokumentation. Als Ihr lokaler Experte für Luftbildfotografie in Hannover bieten wir hochwertige Drohnenaufnahmen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Leistungsumfang:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Hochauflösende 4K/8K Aufnahmen</li>
@@ -334,12 +334,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "luftbild-video",
-      title: "Luftbild-Video Premium",
+      title: "Luftbild-Video Premium Hannover",
       price: "Ab 499€",
-      shortDescription: "Professionelle Luftvideos mit Nachbearbeitung",
+      shortDescription: "Professionelle Luftvideos mit Nachbearbeitung in Hannover",
       image: "/dji-inspire-2.png",
       content: `
-        <p>Hochwertige Luftvideos für Unternehmenspräsentationen, Immobilienmarketing und Events.</p>
+        <p>Hochwertige Luftvideos in Hannover für Unternehmenspräsentationen, Immobilienmarketing und Events. Als lokaler Experte für Luftvideografie in der Region Hannover produzieren wir professionelle Drohnenvideos.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Video-Leistungen:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>4K/8K Videoaufnahmen</li>
@@ -353,12 +353,12 @@ export default function DienstleistungenPage() {
     },
     {
       id: "event-dokumentation",
-      title: "Event-Dokumentation",
+      title: "Event-Dokumentation Hannover",
       price: "Ab 799€",
-      shortDescription: "Umfassende Luftbild-Dokumentation für Veranstaltungen",
+      shortDescription: "Umfassende Luftbild-Dokumentation für Veranstaltungen in Hannover",
       image: "/autel-evo-drone.jpeg",
       content: `
-        <p>Professionelle Luftbild-Dokumentation für Events, Festivals und Veranstaltungen.</p>
+        <p>Professionelle Luftbild-Dokumentation für Events, Festivals und Veranstaltungen in Hannover und Region. Als Ihr lokaler Partner für Event-Fotografie in Hannover bieten wir umfassende Drohnendienstleistungen.</p>
         <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Event-Services:</h4>
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           <li>Live-Streaming möglich</li>
@@ -391,9 +391,9 @@ export default function DienstleistungenPage() {
 
         <div className="container mx-auto px-4 z-10 relative">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Unsere Dienstleistungen</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Drohnen-Dienstleistungen Hannover</h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Entdecken Sie unser umfassendes Angebot an Drohnen-Dienstleistungen für verschiedene Branchen und
+              Ihr lokaler Experte für professionelle Drohnen-Dienstleistungen in Hannover und der Region. Entdecken Sie unser umfassendes Angebot für verschiedene Branchen und
               Anwendungsbereiche
             </p>
           </div>
@@ -403,10 +403,10 @@ export default function DienstleistungenPage() {
       {/* 3D Vermessung und Kartierung Section */}
       <section className="py-16 bg-black" id="vermessung-3d">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center">3D Vermessung und Kartierung</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">3D Vermessung und Kartierung Hannover</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Präzise Geländemodelle, Volumenberechnungen und detaillierte Karten für Bauprojekte, Landschaftsplanung und
-            Dokumentation mit zentimetergenauer Genauigkeit.
+            Präzise Geländemodelle, Volumenberechnungen und detaillierte Karten für Bauprojekte in Hannover und Umgebung. Professionelle Drohnenvermessung mit zentimetergenauer Genauigkeit für Ihre Landschaftsplanung und
+            Dokumentation.
           </p>
 
           <div className="grid gap-8">
@@ -428,10 +428,10 @@ export default function DienstleistungenPage() {
       {/* Thermografie Section */}
       <section className="py-16 bg-zinc-900" id="thermografie">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center">Thermografie</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Thermografie Hannover</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Hochauflösende Wärmebildaufnahmen zur Erkennung von Wärmeverlusten, Defekten und Anomalien in Gebäuden,
-            Solaranlagen und industriellen Anlagen.
+            Professionelle Thermografie-Dienstleistungen in Hannover: Hochauflösende Wärmebildaufnahmen zur Erkennung von Wärmeverlusten, Defekten und Anomalien in Gebäuden,
+            Solaranlagen und industriellen Anlagen in der Region Hannover.
           </p>
 
           <div className="grid gap-8">
@@ -453,10 +453,10 @@ export default function DienstleistungenPage() {
       {/* Industrie Inspektion Section */}
       <section className="py-16 bg-black" id="industrie-inspektionen">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center">Industrie Inspektion</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Industrie Inspektion Hannover</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Frühzeitige Schadenserkennung, Vermeidung von Produktionsausfällen, Optimierung der Wartungsplanung und
-            Kostenreduktion durch präventive Wartung.
+            Professionelle Industrieinspektionen für Unternehmen in Hannover und der Region: Frühzeitige Schadenserkennung, Vermeidung von Produktionsausfällen, Optimierung der Wartungsplanung und
+            Kostenreduktion durch präventive Wartung mit modernster Drohnentechnologie.
           </p>
 
           <div className="grid gap-8">
@@ -478,10 +478,10 @@ export default function DienstleistungenPage() {
       {/* Bau und Immobilieninspektionen Section */}
       <section className="py-16 bg-zinc-900" id="bau-immobilien">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center">Bau und Immobilieninspektionen</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Bau- und Immobilieninspektionen Hannover</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Detaillierte Inspektionen von Gebäuden, Dächern und Fassaden ohne Gerüste für Immobilienbewertungen,
-            Baufortschrittsdokumentation und Schadensbegutachtung.
+            Professionelle Bau- und Immobilieninspektionen in Hannover: Detaillierte Inspektionen von Gebäuden, Dächern und Fassaden ohne Gerüste für Immobilienbewertungen,
+            Baufortschrittsdokumentation und Schadensbegutachtung in der Region Hannover.
           </p>
 
           <div className="grid gap-8">
@@ -503,10 +503,10 @@ export default function DienstleistungenPage() {
       {/* Indoor-Flüge Section */}
       <section className="py-16 bg-black" id="indoor-fluge">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center">Indoor-Flüge</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Indoor-Flüge Hannover</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Spezialisierte Drohnenflüge in Innenräumen für Inspektionen, Dokumentation und Bestandsaufnahmen in
-            Industriehallen, Lagern und schwer zugänglichen Bereichen.
+            Spezialisierte Indoor-Drohnenflüge in Hannover und Umgebung: Professionelle Inspektionen, Dokumentation und Bestandsaufnahmen in
+            Industriehallen, Lagern und schwer zugänglichen Bereichen mit modernster Indoor-Drohnentechnologie.
           </p>
 
           <div className="grid gap-8">
@@ -528,9 +528,9 @@ export default function DienstleistungenPage() {
       {/* Luftbildfotografie Section */}
       <section className="py-16 bg-zinc-900" id="luftbildfotografie">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center">Luftbildfotografie</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">Luftbildfotografie Hannover</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Hochwertige Luftaufnahmen für Marketing, Immobilienpräsentationen, Veranstaltungen und Dokumentation mit
+            Professionelle Luftbildfotografie in Hannover und Region: Hochwertige Luftaufnahmen für Marketing, Immobilienpräsentationen, Veranstaltungen und Dokumentation mit
             professioneller Bildbearbeitung und Nachbearbeitung.
           </p>
 
@@ -693,9 +693,9 @@ export default function DienstleistungenPage() {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Bereit für Ihre Drohneninspektion?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Bereit für Ihre Drohneninspektion in Hannover?</h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Kontaktieren Sie uns noch heute für ein unverbindliches Angebot oder eine Beratung zu Ihrem Projekt
+            Kontaktieren Sie uns noch heute für ein unverbindliches Angebot oder eine Beratung zu Ihrem Projekt in Hannover und der Region
           </p>
           <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-6 text-lg" asChild>
             <Link href="/kontakt#kontaktformular">Kontakt aufnehmen</Link>

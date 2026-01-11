@@ -92,6 +92,62 @@ export default function UeberUnsPage() {
         </div>
       </section>
 
+      {/* Use Cases & Trust CTA */}
+      <section className="py-12 bg-blue-950/40 border-y border-blue-900/40">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-blue-400 mb-4">Wo wir Sie konkret unterstützen</h3>
+              <p className="text-lg text-gray-300 mb-6">
+                Wir verbinden zertifizierte Flugpraxis mit Bau-Expertise. Drei typische Anwendungsfälle, bei denen Kunden
+                auf uns vertrauen:
+              </p>
+              <div className="space-y-3">
+                <div className="bg-zinc-900/80 border border-zinc-800 rounded-lg p-4">
+                  <p className="text-white font-semibold">PV-Anlagen – mehr Ertrag, weniger Risiko</p>
+                  <p className="text-gray-300 text-sm">
+                    Thermografie + Reinigung nach VDE 0126-23-1, messbar bessere Performance und Garantie-Compliance.
+                  </p>
+                </div>
+                <div className="bg-zinc-900/80 border border-zinc-800 rounded-lg p-4">
+                  <p className="text-white font-semibold">Industrie & Logistik – Stillstand vermeiden</p>
+                  <p className="text-gray-300 text-sm">
+                    Wiederkehrende Inspektionen mit dokumentierten Befunden, 24/48h Reaktionszeit bei kritischen Funden.
+                  </p>
+                </div>
+                <div className="bg-zinc-900/80 border border-zinc-800 rounded-lg p-4">
+                  <p className="text-white font-semibold">Bau & Immobilien – sichere Entscheidungen</p>
+                  <p className="text-gray-300 text-sm">
+                    VDI 6200-konforme Prüfungen und 3D-Aufmaße für Abnahmen, Finanzierung und Sanierungsplanung.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-zinc-900/80 border border-blue-900 rounded-xl p-6">
+              <p className="text-sm uppercase tracking-wide text-blue-300 mb-2">Sicherheit & Verlässlichkeit</p>
+              <h4 className="text-2xl font-bold text-white mb-4">Kostenlose Erstberatung mit klarer Empfehlung</h4>
+              <ul className="text-gray-300 space-y-2 mb-6">
+                <li>✔ VDE-zertifiziert, LBA-registriert, vollversichert bis 5 Mio. €</li>
+                <li>✔ Datenschutzkonform (DSGVO), sichere Datenwege</li>
+                <li>✔ Verbindliche Zeitpläne und transparente Angebote</li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto px-6 py-3" asChild>
+                  <Link href="/kontakt#kontaktformular">Kostenloses Erstgespräch buchen</Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-blue-600 text-blue-400 hover:bg-blue-950 w-full sm:w-auto px-6 py-3"
+                  asChild
+                >
+                  <Link href="/projekte">Referenzen ansehen</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Founder Section */}
       <section className="py-20 bg-zinc-900">
         <div className="container mx-auto px-4">
@@ -319,7 +375,7 @@ export default function UeberUnsPage() {
               Vogelperspektive.
             </p>
             <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg" asChild>
-              <Link href="/kontakt#kontaktformular">Kontaktieren Sie uns noch heute</Link>
+              <Link href="/kontakt#kontaktformular">Kostenloses Erstgespräch sichern</Link>
             </Button>
           </div>
         </div>

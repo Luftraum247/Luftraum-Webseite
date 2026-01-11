@@ -146,6 +146,39 @@ export default function ProjektePage() {
         </div>
       </section>
 
+      {/* CTA & Trust */}
+      <section className="py-16 bg-blue-950/40 border-y border-blue-900/40">
+        <div className="container mx-auto px-4">
+          <div className="bg-zinc-900/80 border border-blue-900 rounded-xl p-8 md:p-10 grid md:grid-cols-3 gap-8 items-center">
+            <div className="md:col-span-2">
+              <p className="text-sm uppercase tracking-wide text-blue-300 mb-2">Erprobte Ergebnisse</p>
+              <h2 className="text-3xl font-bold text-white mb-4">Das nächste Erfolgsprojekt könnte Ihres sein</h2>
+              <p className="text-lg text-gray-300">
+                Ob PV-Thermografie, VDI 6200 Prüfungen oder 3D-Aufmaß: Sie erhalten einen klaren Projektplan,
+                datenschutzsichere Übergabe und messbare Verbesserungen – dokumentiert in einem verständlichen Report.
+              </p>
+              <ul className="text-gray-300 space-y-2 mt-4">
+                <li>✔ LBA-registrierte Piloten, VDE-konforme Prüfungen</li>
+                <li>✔ Vollversichert bis 5 Mio. € und DSGVO-konforme Datenhaltung</li>
+                <li>✔ Verbindliche Zeitpläne und transparente Angebote</li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full px-6 py-3" asChild>
+                <a href="/kontakt#kontaktformular">Projekt besprechen</a>
+              </Button>
+              <Button
+                variant="outline"
+                className="border-blue-600 text-blue-400 hover:bg-blue-950 w-full px-6 py-3"
+                asChild
+              >
+                <a href="/dienstleistungen">Leistungen vergleichen</a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Google Reviews Section */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">

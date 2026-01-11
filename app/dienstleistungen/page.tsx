@@ -400,6 +400,41 @@ export default function DienstleistungenPage() {
         </div>
       </section>
 
+      {/* Trust & CTA */}
+      <section className="py-12 bg-blue-950/40 border-y border-blue-900/40">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-sm uppercase tracking-wide text-blue-300 mb-2">Verlässlich & zertifiziert</p>
+              <h3 className="text-3xl font-bold text-white mb-4">Kostenlose Erstberatung mit Projektfahrplan</h3>
+              <p className="text-lg text-gray-300">
+                Wir liefern innerhalb von 24 Stunden eine klare Handlungsempfehlung, Kostenrahmen und Zeitleiste – damit
+                Sie schnell entscheiden können.
+              </p>
+            </div>
+            <div className="bg-zinc-900/80 border border-blue-900 rounded-xl p-6">
+              <ul className="text-gray-300 space-y-2 mb-6">
+                <li>✔ VDE-konforme Prüfungen & LBA-registrierte Piloten</li>
+                <li>✔ Vollversichert bis 5 Mio. € & DSGVO-konforme Datenablage</li>
+                <li>✔ Feste Ansprechpartner, verbindliche Termine, klarer Report</li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto px-6 py-3" asChild>
+                  <Link href="/kontakt#kontaktformular">Erstgespräch anfragen</Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-blue-600 text-blue-400 hover:bg-blue-950 w-full sm:w-auto px-6 py-3"
+                  asChild
+                >
+                  <Link href="/projekte">Ergebnisse ansehen</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3D Vermessung und Kartierung Section */}
       <section className="py-16 bg-black" id="vermessung-3d">
         <div className="container mx-auto px-4">
@@ -693,12 +728,13 @@ export default function DienstleistungenPage() {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Bereit für Ihre Drohneninspektion in Hannover?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Bereit für Klarheit zu Ihrem Projekt?</h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Kontaktieren Sie uns noch heute für ein unverbindliches Angebot oder eine Beratung zu Ihrem Projekt in Hannover und der Region
+            Sie erhalten innerhalb von 24h eine konkrete Einschätzung, einen transparenten Kostenrahmen und den
+            nächstmöglichen Einsatztermin. Zertifiziert, versichert, deutschlandweit einsatzbereit.
           </p>
           <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-6 text-lg" asChild>
-            <Link href="/kontakt#kontaktformular">Kontakt aufnehmen</Link>
+            <Link href="/kontakt#kontaktformular">Kostenlose Erstberatung starten</Link>
           </Button>
         </div>
       </section>

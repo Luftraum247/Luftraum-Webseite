@@ -3,8 +3,32 @@ import Link from "next/link"
 import { ChevronRight, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ReferencesCarousel from "@/components/references-carousel"
+import FAQSchema from "@/components/faq-schema"
 
 export default function Home() {
+  const faqItems = [
+    {
+      question: "Wie schnell können Sie einen Auftrag ausführen?",
+      answer:
+        "Je nach Auftragslage und Wetterbedingungen können wir in der Regel innerhalb von 1-2 Wochen einen Termin anbieten. Bei dringenden Anfragen bemühen wir uns um eine schnellere Bearbeitung.",
+    },
+    {
+      question: "Welche Wetterbedingungen sind für Drohnenflüge erforderlich?",
+      answer:
+        "Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8ms. Bei Regen, Schnee oder starkem Wind können nur bestimmte Flüge durchgeführt werden mit der Dji Matrice Serie. (Dji M30T IP55 und Matrice 210 V2 RTK IP43)Hier können Rettungsflüge und andere Szenarien Durchgeführt werden.",
+    },
+    {
+      question: "Benötigen Sie spezielle Genehmigungen für Drohnenflüge?",
+      answer:
+        "Wir verfügen über alle notwendigen Genehmigungen und Versicherungen für kommerzielle Drohnenflüge. Bei besonderen Einsatzorten (z.B. Flughafennähe) kümmern wir uns um die erforderlichen Sondergenehmigungen.",
+    },
+    {
+      question: "In welchem Format erhalte ich die Ergebnisse?",
+      answer:
+        "Je nach Auftrag liefern wir die Daten in verschiedenen Formaten: Bilder als JPG/PNG, Videos als MP4, 3D-Modelle als OBJ/FBX und Karten als GeoTIFF oder PDF. Spezielle Formate sind auf Anfrage möglich.",
+    },
+  ]
+
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
@@ -213,6 +237,58 @@ export default function Home() {
           </div>
 
           <ReferencesCarousel />
+        </div>
+      </section>
+
+      <FAQSchema items={faqItems} />
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-black" id="faq">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Häufig gestellte Fragen</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-zinc-900 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-blue-400">
+                Wie schnell können Sie einen Auftrag ausführen?
+              </h3>
+              <p className="text-gray-300">
+                Je nach Auftragslage und Wetterbedingungen können wir in der Regel innerhalb von 1-2 Wochen einen Termin
+                anbieten. Bei dringenden Anfragen bemühen wir uns um eine schnellere Bearbeitung.
+              </p>
+            </div>
+
+            <div className="bg-zinc-900 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-blue-400">
+                Welche Wetterbedingungen sind für Drohnenflüge erforderlich?
+              </h3>
+              <p className="text-gray-300">
+                Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8ms. Bei Regen, Schnee oder
+                starkem Wind können nur bestimmte Flüge durchgeführt werden mit der Dji Matrice Serie. (Dji M30T IP55
+                und Matrice 210 V2 RTK IP43)Hier können Rettungsflüge und andere Szenarien Durchgeführt werden.
+              </p>
+            </div>
+
+            <div className="bg-zinc-900 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-blue-400">
+                Benötigen Sie spezielle Genehmigungen für Drohnenflüge?
+              </h3>
+              <p className="text-gray-300">
+                Wir verfügen über alle notwendigen Genehmigungen und Versicherungen für kommerzielle Drohnenflüge. Bei
+                besonderen Einsatzorten (z.B. Flughafennähe) kümmern wir uns um die erforderlichen Sondergenehmigungen.
+              </p>
+            </div>
+
+            <div className="bg-zinc-900 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-blue-400">
+                In welchem Format erhalte ich die Ergebnisse?
+              </h3>
+              <p className="text-gray-300">
+                Je nach Auftrag liefern wir die Daten in verschiedenen Formaten: Bilder als JPG/PNG, Videos als MP4,
+                3D-Modelle als OBJ/FBX und Karten als GeoTIFF oder PDF. Spezielle Formate sind auf Anfrage möglich.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

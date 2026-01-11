@@ -22,11 +22,11 @@ export default function Home() {
 
         <div className="container mx-auto px-4 z-10 relative">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Professionelle Drohneninspektionen für Industrie und Immobilien
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              Drohnengestützte PVThermografie & Bauinspektionen in Hannover
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Präzise Luftaufnahmen, 3D-Vermessungen und Thermografie für Ihre Projekte
+              DIN/IECkonform mit 24/48h Reaktionszeit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg" asChild>
@@ -37,7 +37,7 @@ export default function Home() {
                 className="border-blue-600 text-blue-400 hover:bg-blue-900/20 px-8 py-6 text-lg bg-transparent"
                 asChild
               >
-                <Link href="/kontakt#kontaktformular">Kontakt aufnehmen</Link>
+                <Link href="/kontakt#kontaktformular">Angebot in 24h erhalten</Link>
               </Button>
             </div>
           </div>

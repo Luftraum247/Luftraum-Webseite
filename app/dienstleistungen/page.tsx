@@ -400,6 +400,33 @@ export default function DienstleistungenPage() {
         </div>
       </section>
 
+      {/* Erklärvideo */}
+      <section className="py-10 bg-zinc-950 border-y border-zinc-800">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-sm uppercase tracking-wide text-blue-300 mb-2">Kurz erklärt</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Erklärvideo zu unseren Dienstleistungen</h2>
+              <p className="text-gray-300">
+                In diesem Video zeigen wir kompakt, welche Services Luftraum247 anbietet und wie der Ablauf in der
+                Praxis aussieht. (Öffnet in einem neuen Tab.)
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto px-6 py-3" asChild>
+                <a
+                  href="https://drive.google.com/file/d/1ATaXmnfSfxKIVD1KP-0e0gzk864Ff_nA/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Erklärvideo öffnen
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trust & CTA */}
       <section className="py-12 bg-blue-950/40 border-y border-blue-900/40">
         <div className="container mx-auto px-4">

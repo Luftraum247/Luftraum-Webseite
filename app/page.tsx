@@ -313,8 +313,8 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI-Mini-3-Pro-M6pZBwoxteO2P7HfJNmTD9a7VKpChv.webp"
-                alt="DJI Mini 3 Pro Drohne - Kompakte und leistungsstarke Drohne für flexible Einsätze"
+                src="/MAVIC3Enterprise.jpg"
+                alt="DJI Mavic 3 Enterprise Drohne - Kompakte und leistungsstarke Drohne für professionelle Einsätze"
                 fill
                 className="object-contain"
               />
@@ -372,8 +372,8 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden order-1 md:order-2">
               <Image
-                src="/autel-evo-drone.jpeg"
-                alt="Autel Evo Enterprise Drohne mit Thermografiekamera für professionelle Inspektionen"
+                src="/DJM30T.jpg"
+                alt="DJI Matrice M30T Drohne - Industriedrohne mit Wärmebildkamera für professionelle Inspektionen"
                 fill
                 className="object-cover rounded-lg"
               />

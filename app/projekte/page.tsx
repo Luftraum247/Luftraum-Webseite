@@ -34,22 +34,28 @@ const projects = [
     tags: ["VDI 6200", "30.000 m²", "DJI Avata 2", "IC-L Partnerschaft", "VW Nutzfahrzeuge"],
   },
   {
-    title: "3D-Aufmaß für GaLaBau am Helene Kaisen Campus, Bremen",
-    category: "3D-Vermessung & Kartierung",
+    title: "Solar Care Plus bei Toyota",
+    category: "PV-Inspektion & Solar Care Plus",
     description: `
-      <p>In Kooperation mit der renommierten GaLaBau-Firma Muhl & Ohlendorf wurde eine innovative 3D-Aufmaßlösung für eine beeindruckende Schulfläche von 45.000 m² entwickelt. Eine besondere Herausforderung war die Nähe zum Flughafen Bremen, die dank unserer Ausnahmegenehmigung und direkter Funkverbindung gemeistert wurde.</p>
-      <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Innovative Lösung für den GaLaBau-Sektor:</h4>
-      <p>Durch monatliche 3D-Modellierung wurde ein präziser Ist/Soll-Vergleich für die Baufortschrittskontrolle ermöglicht. Dies führte zu massiver Zeit- und Kostenersparnis.</p>
-      <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Revolutionäre Vorteile:</h4>
+      <p>Für Toyota haben wir im Rahmen unseres Solar Care Plus-Services ein vollständiges PV-Servicepaket umgesetzt: Drohnen-Thermografie, visuelle Inspektion, Reinigung sowie VDE-konforme Prüfungen – inklusive technischer Dokumentation. Ziel war es, den Anlagenzustand schnell, sicher und präzise zu erfassen und eine belastbare Grundlage für Instandhaltung und Performance-Optimierung zu schaffen.</p>
+      <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Unser Vorgehen</h4>
       <ul class="list-disc pl-5 space-y-1 text-gray-300">
-        <li><strong>Massive Zeitersparnis</strong> durch automatisierte Aufmaßverfahren.</li>
-        <li><strong>Erhebliche Kostenreduktion</strong> gegenüber herkömmlichen Methoden.</li>
-        <li><strong>Kontinuierliche Transparenz</strong> über den Projektfortschritt via Cloud-Zugang.</li>
+        <li>Planung &amp; Abstimmung der Abläufe inkl. Sicherheitskonzept</li>
+        <li>Drohnenbefliegung (Thermografie + Sichtprüfung) zur Identifikation von Auffälligkeiten</li>
+        <li>Reinigung der Anlage zur Wiederherstellung optimaler Erträge</li>
+        <li>VDE-konforme Prüfungen und strukturierte Ergebnisdokumentation</li>
+        <li>Aufbereitung und Übergabe der Ergebnisse in kundengerechten Formaten</li>
       </ul>
-      <p class="mt-4">Dieses Projekt setzt neue Maßstäbe für digitale Aufmaßverfahren im Garten- und Landschaftsbau und bestätigt die Zukunftsfähigkeit drohnengestützter Lösungen.</p>
+      <h4 class="text-lg font-semibold mt-4 mb-2 text-white">Mehrwert</h4>
+      <ul class="list-disc pl-5 space-y-1 text-gray-300">
+        <li>Hohe Detailtiefe in kurzer Zeit bei minimalem Eingriff in den Betrieb</li>
+        <li>Mehr Sicherheit durch Inspektion aus der Distanz</li>
+        <li>Prüf- und wartungsfähige Dokumentation als Basis für Instandhaltung und Nachweise</li>
+      </ul>
+      <p class="mt-4"><strong>Interesse an Solar Care Plus für Ihre PV-Anlage?</strong> Wir beraten persönlich und erstellen ein passendes Konzept für Ihren Anwendungsfall.</p>
     `,
-    image: "/helene-kaisen-campus-3d-modell.png",
-    tags: ["45.000 m²", "3D-Aufmaß", "GaLaBau", "Flughafennähe", "Muhl & Ohlendorf"],
+    image: "/Toyota%20Material%20Handling%20Deutschland.jpeg",
+    tags: ["Toyota", "Drohnen-Thermografie", "Visuelle Inspektion", "Reinigung", "VDE-Prüfungen", "Dokumentation"],
   },
   {
     title: "Solar Care Plus bei Bahlsen - 85% Problemreduzierung",

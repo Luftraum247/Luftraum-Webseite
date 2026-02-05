@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   authors: [{ name: "Luftraum247" }],
   creator: "Luftraum247",
   publisher: "Luftraum247",
+  icons: {
+    icon: [{ url: "/favicon-32.png", type: "image/png", sizes: "32x32" }],
+    shortcut: ["/favicon-32.png"],
+  },
   formatDetection: {
     email: false,
     address: false,

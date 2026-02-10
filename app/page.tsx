@@ -326,7 +326,7 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-zinc-800 p-4 rounded-lg">
-                  <h4 className="font-semibold text-lg mb-2">DJI Mini 3 Pro</h4>
+                  <h4 className="font-semibold text-lg mb-2">DJI Mini 5 pro</h4>
                   <p className="text-gray-300 text-sm">Kompakte Drohne für flexible Einsätze</p>
                 </div>
                 <div className="bg-zinc-800 p-4 rounded-lg">

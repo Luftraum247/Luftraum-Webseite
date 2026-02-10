@@ -409,19 +409,21 @@ export default function DienstleistungenPage() {
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Erklärvideo zu unseren Dienstleistungen</h2>
               <p className="text-gray-300">
                 In diesem Video zeigen wir kompakt, welche Services Luftraum247 anbietet und wie der Ablauf in der
-                Praxis aussieht. (Öffnet in einem neuen Tab.)
+                Praxis aussieht.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto px-6 py-3" asChild>
-                <a
-                  href="https://drive.google.com/file/d/1ATaXmnfSfxKIVD1KP-0e0gzk864Ff_nA/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Erklärvideo öffnen
-                </a>
-              </Button>
+            <div className="w-full md:max-w-xl">
+              <div className="relative w-full pb-[56.25%] overflow-hidden rounded-xl border border-zinc-800 bg-black">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src="https://www.youtube.com/embed/LRed5vRqKXk?rel=0"
+                  title="Erklärvideo: Luftraum247"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  loading="lazy"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -508,6 +510,21 @@ export default function DienstleistungenPage() {
                 image={service.image}
               />
             ))}
+          </div>
+
+          {/* Solar Care Video (below last package) */}
+          <div className="mt-10">
+            <div className="relative w-full max-w-4xl mx-auto pb-[56.25%] overflow-hidden rounded-xl border border-zinc-800 bg-black">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/KYaVGpdh3Oo?rel=0"
+                title="Erklärvideo: Solar Care"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                loading="lazy"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </section>

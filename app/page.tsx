@@ -32,6 +32,9 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white">
+      <div id="soro-blog"></div>
+      <script src="https://app.trysoro.com/api/embed/c878b43c-ad52-4799-bc18-44136e52f0e0" defer></script>
+
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-start lg:items-center overflow-hidden pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-0 lg:pb-0">
         <div className="absolute inset-0 z-0">

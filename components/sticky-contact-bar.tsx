@@ -12,8 +12,8 @@ const OFFER_HREF = "/kontakt#kontaktformular"
 export default function StickyContactBar() {
   return (
     <>
-      {/* Desktop: right-side sticky bar */}
-      <div className="fixed right-4 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-3 md:flex">
+      {/* Desktop: bottom-right sticky bar (kept out of the vertical center so it never sits over headings/cards) */}
+      <div className="fixed bottom-6 right-6 z-50 hidden flex-col items-end gap-3 lg:flex">
         <Button
           asChild
           variant="outline"
@@ -49,8 +49,8 @@ export default function StickyContactBar() {
         </Button>
       </div>
 
-      {/* Mobile: bottom bar */}
-      <div className="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-full border border-zinc-700 bg-zinc-900/70 p-2 shadow-lg backdrop-blur md:hidden">
+      {/* Mobile/tablet/small-laptop: bottom bar (covers the range where the desktop rail would overlap page content) */}
+      <div className="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-full border border-zinc-700 bg-zinc-900/70 p-2 shadow-lg backdrop-blur lg:hidden">
         <Button asChild size="icon" variant="outline" className="border-zinc-700 bg-transparent text-white">
           <a href={`mailto:${EMAIL}`} aria-label="E-Mail senden">
             <Mail />

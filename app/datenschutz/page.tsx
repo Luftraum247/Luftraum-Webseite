@@ -208,7 +208,7 @@ export default function DatenschutzPage() {
                   <p className="text-gray-300">Schäfertrift 19</p>
                   <p className="text-gray-300">30657 Hannover</p>
                   <p className="text-gray-300">Deutschland</p>
-                  <p className="text-gray-300">Tel.: +491631902432</p>
+                  <p className="text-gray-300">Tel.: +49 163 1902432</p>
                   <p className="text-gray-300">E-Mail: Marques.jorge@luftraum247.de</p>
                   <p className="text-gray-300">Website: www.luftraum247.de</p>
                 </div>

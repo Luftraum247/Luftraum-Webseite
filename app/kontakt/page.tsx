@@ -26,12 +26,12 @@ export default function KontaktPage() {
     {
       question: "Wie schnell können Sie einen Auftrag ausführen?",
       answer:
-        "Je nach Auftragslage und Wetterbedingungen können wir in der Regel innerhalb von 1-2 Wochen einen Termin anbieten. Bei dringenden Anfragen bemühen wir uns um eine schnellere Bearbeitung.",
+        "Auf Ihre Anfrage melden wir uns in der Regel innerhalb von 24–48 Stunden mit einem Angebot zurück. Der eigentliche Vor-Ort-Termin findet je nach Auftragslage und Wetterbedingungen meist innerhalb von 1-2 Wochen statt; bei dringenden Anfragen bemühen wir uns um eine schnellere Terminierung.",
     },
     {
       question: "Welche Wetterbedingungen sind für Drohnenflüge erforderlich?",
       answer:
-        "Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8ms. Bei Regen, Schnee oder starkem Wind können nur bestimmte Flüge durchgeführt werden mit der Dji Matrice Serie. (Dji M30T IP55 und Matrice 210 V2 RTK IP43)Hier können Rettungsflüge und andere Szenarien Durchgeführt werden.",
+        "Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8 m/s). Bei Regen, Schnee oder starkem Wind können nur noch eingeschränkt Flüge mit der DJI-Matrice-Serie durchgeführt werden (DJI M30T, Schutzklasse IP55, und Matrice 210 V2 RTK, Schutzklasse IP43) – etwa für Rettungsflüge und andere Sondereinsätze.",
     },
     {
       question: "Benötigen Sie spezielle Genehmigungen für Drohnenflüge?",
@@ -93,8 +93,8 @@ export default function KontaktPage() {
                   <Phone className="h-8 w-8 text-blue-400 mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Telefon</h3>
-                    <p className="text-gray-300">Festnetz: +49 51199922127</p>
-                    <p className="text-gray-300">Mobil: +49 1631902432</p>
+                    <p className="text-gray-300">Festnetz: +49 511 99922127</p>
+                    <p className="text-gray-300">Mobil: +49 163 1902432</p>
                   </div>
                 </div>
 
@@ -151,46 +151,12 @@ export default function KontaktPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Häufig gestellte Fragen</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-zinc-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-blue-400">
-                Wie schnell können Sie einen Auftrag ausführen?
-              </h3>
-              <p className="text-gray-300">
-                Je nach Auftragslage und Wetterbedingungen können wir in der Regel innerhalb von 1-2 Wochen einen Termin
-                anbieten. Bei dringenden Anfragen bemühen wir uns um eine schnellere Bearbeitung.
-              </p>
-            </div>
-
-            <div className="bg-zinc-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-blue-400">
-                Welche Wetterbedingungen sind für Drohnenflüge erforderlich?
-              </h3>
-              <p className="text-gray-300">
-                Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8ms. Bei Regen, Schnee oder
-                starkem Wind können nur bestimmte Flüge durchgeführt werden mit der Dji Matrice Serie. (Dji M30T IP55
-                und Matrice 210 V2 RTK IP43)Hier können Rettungsflüge und andere Szenarien Durchgeführt werden.
-              </p>
-            </div>
-
-            <div className="bg-zinc-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-blue-400">
-                Benötigen Sie spezielle Genehmigungen für Drohnenflüge?
-              </h3>
-              <p className="text-gray-300">
-                Wir verfügen über alle notwendigen Genehmigungen und Versicherungen für kommerzielle Drohnenflüge. Bei
-                besonderen Einsatzorten (z.B. Flughafennähe) kümmern wir uns um die erforderlichen Sondergenehmigungen.
-              </p>
-            </div>
-
-            <div className="bg-zinc-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-blue-400">
-                In welchem Format erhalte ich die Ergebnisse?
-              </h3>
-              <p className="text-gray-300">
-                Je nach Auftrag liefern wir die Daten in verschiedenen Formaten: Bilder als JPG/PNG, Videos als MP4,
-                3D-Modelle als OBJ/FBX und Karten als GeoTIFF oder PDF. Spezielle Formate sind auf Anfrage möglich.
-              </p>
-            </div>
+            {faqItems.map((item) => (
+              <div key={item.question} className="bg-zinc-900 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-3 text-blue-400">{item.question}</h3>
+                <p className="text-gray-300">{item.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

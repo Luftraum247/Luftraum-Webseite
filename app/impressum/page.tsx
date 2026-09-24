@@ -37,8 +37,8 @@ export default function ImpressumPage() {
 
               <div>
                 <h2 className="text-2xl font-bold mb-4 text-blue-400">Kontakt:</h2>
-                <p className="text-gray-300">Festnetz: +4951199922127</p>
-                <p className="text-gray-300">Mobil: +491631902432</p> 
+                <p className="text-gray-300">Festnetz: +49 511 99922127</p>
+                <p className="text-gray-300">Mobil: +49 163 1902432</p> 
                 <p className="text-gray-300">E-Mail: marques.jorge@luftraum247.de</p>
                 <p className="text-gray-300">Website: www.luftraum247.de</p>
               </div>

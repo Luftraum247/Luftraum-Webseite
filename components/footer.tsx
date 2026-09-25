@@ -161,7 +161,7 @@ export default function Footer() {
 
             {/* ProvenExpert Seal in Footer */}
             <div className="mt-6">
-              <ProvenExpertSeal />
+              <ProvenExpertSeal widgetContainerId="proSealWidget-footer" />
             </div>
           </div>
         </div>

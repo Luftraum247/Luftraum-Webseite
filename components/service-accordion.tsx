@@ -84,7 +84,7 @@ const ServiceAccordion: React.FC<ServiceAccordionProps> = ({ id, title, price, s
 
               <div className="mt-6">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="/kontakt#kontaktformular">Anfrage stellen</Link>
+                  <Link href="/kontakt#kontaktformular">Angebot in 24h anfordern</Link>
                 </Button>
               </div>
             </div>

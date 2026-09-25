@@ -7,6 +7,7 @@ import BreadcrumbSchema from "@/components/breadcrumb-schema"
 import HashNavigator from "@/components/hash-navigator"
 // Am Anfang der Komponente nach den Imports
 import FAQSchema from "@/components/faq-schema"
+import { faqItems } from "@/lib/faq-items"
 
 export const metadata: Metadata = {
   title: "Kontakt | Luftraum247 - Professionelle Drohneninspektionen",
@@ -21,30 +22,6 @@ export default function KontaktPage() {
     { name: "Kontakt", url: "https://luftraum247.de/kontakt" },
   ]
 
-  // Innerhalb der Komponente, vor dem return-Statement
-  const faqItems = [
-    {
-      question: "Wie schnell können Sie einen Auftrag ausführen?",
-      answer:
-        "Auf Ihre Anfrage melden wir uns in der Regel innerhalb von 24–48 Stunden mit einem Angebot zurück. Der eigentliche Vor-Ort-Termin findet je nach Auftragslage und Wetterbedingungen meist innerhalb von 1-2 Wochen statt; bei dringenden Anfragen bemühen wir uns um eine schnellere Terminierung.",
-    },
-    {
-      question: "Welche Wetterbedingungen sind für Drohnenflüge erforderlich?",
-      answer:
-        "Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8 m/s). Bei Regen, Schnee oder starkem Wind können nur noch eingeschränkt Flüge mit der DJI-Matrice-Serie durchgeführt werden (DJI M30T, Schutzklasse IP55, und Matrice 210 V2 RTK, Schutzklasse IP43) – etwa für Rettungsflüge und andere Sondereinsätze.",
-    },
-    {
-      question: "Benötigen Sie spezielle Genehmigungen für Drohnenflüge?",
-      answer:
-        "Wir verfügen über alle notwendigen Genehmigungen und Versicherungen für kommerzielle Drohnenflüge. Bei besonderen Einsatzorten (z.B. Flughafennähe) kümmern wir uns um die erforderlichen Sondergenehmigungen.",
-    },
-    {
-      question: "In welchem Format erhalte ich die Ergebnisse?",
-      answer:
-        "Je nach Auftrag liefern wir die Daten in verschiedenen Formaten: Bilder als JPG/PNG, Videos als MP4, 3D-Modelle als OBJ/FBX und Karten als GeoTIFF oder PDF. Spezielle Formate sind auf Anfrage möglich.",
-    },
-  ]
-
   return (
     <main className="min-h-screen bg-black text-white pt-20">
       <HashNavigator />
@@ -56,6 +33,7 @@ export default function KontaktPage() {
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI-Mini-3-Pro-M6pZBwoxteO2P7HfJNmTD9a7VKpChv.webp"
             alt="DJI Mini 3 Pro Drohne im Einsatz - Kontaktieren Sie Luftraum247 für Ihre Drohneninspektion"
             fill
+            sizes="100vw"
             className="object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black"></div>

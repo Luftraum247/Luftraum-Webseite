@@ -4,18 +4,58 @@ import { useEffect } from "react"
 
 declare global {
   interface Window {
-    loadProSeal?: () => void
     provenExpert?: {
       proSeal: (config: any) => void
     }
   }
 }
 
-export default function ProvenExpertSeal() {
+const PROVEN_EXPERT_SCRIPT_SRC = "https://s.provenexpert.net/seals/proseal-v2.js"
+
+// Module-level singleton so the ProvenExpert script is only ever requested
+// once, even though the seal widget is mounted twice on the homepage
+// (hero + footer). Every mount awaits the same promise and then renders
+// into its own uniquely-id'd container.
+let provenExpertScriptPromise: Promise<void> | null = null
+
+function loadProvenExpertScript(): Promise<void> {
+  if (typeof window === "undefined") {
+    return Promise.resolve()
+  }
+
+  if (!provenExpertScriptPromise) {
+    provenExpertScriptPromise = new Promise((resolve, reject) => {
+      const existing = document.querySelector<HTMLScriptElement>(`script[src="${PROVEN_EXPERT_SCRIPT_SRC}"]`)
+      if (existing) {
+        existing.addEventListener("load", () => resolve())
+        existing.addEventListener("error", reject)
+        return
+      }
+
+      const script = document.createElement("script")
+      script.src = PROVEN_EXPERT_SCRIPT_SRC
+      script.defer = true
+      script.onload = () => resolve()
+      script.onerror = reject
+      document.head.appendChild(script)
+    })
+  }
+
+  return provenExpertScriptPromise
+}
+
+interface ProvenExpertSealProps {
+  /** Unique DOM id for this widget instance's container. */
+  widgetContainerId?: string
+}
+
+export default function ProvenExpertSeal({ widgetContainerId = "proSealWidget" }: ProvenExpertSealProps) {
   useEffect(() => {
-    // Define the loadProSeal function
-    window.loadProSeal = () => {
-      if (window.provenExpert) {
+    let cancelled = false
+
+    loadProvenExpertScript()
+      .then(() => {
+        if (cancelled || !window.provenExpert) return
         window.provenExpert.proSeal({
           widgetId: "b4700771-f357-497d-83cf-529145bb8a19",
           language: "de-DE",
@@ -28,31 +68,18 @@ export default function ProvenExpertSeal() {
           hideName: false,
           googleStars: false,
           displayReviewerLastName: false,
-          embeddedSelector: "#proSealWidget",
+          embeddedSelector: `#${widgetContainerId}`,
         })
-      }
-    }
+      })
+      .catch(() => {
+        // Widget script failed to load (e.g. blocked, offline) — the
+        // <noscript> fallback link below still gives visitors a way through.
+      })
 
-    // Load the ProvenExpert script
-    const script = document.createElement("script")
-    script.src = "https://s.provenexpert.net/seals/proseal-v2.js"
-    script.onload = () => {
-      if (window.loadProSeal) {
-        window.loadProSeal()
-      }
-    }
-    script.defer = true
-    document.head.appendChild(script)
-
-    // Cleanup function
     return () => {
-      // Remove script if component unmounts
-      const existingScript = document.querySelector('script[src="https://s.provenexpert.net/seals/proseal-v2.js"]')
-      if (existingScript) {
-        existingScript.remove()
-      }
+      cancelled = true
     }
-  }, [])
+  }, [widgetContainerId])
 
   return (
     <>
@@ -67,7 +94,7 @@ export default function ProvenExpertSeal() {
           Mehr Infos
         </a>
       </noscript>
-      <div id="proSealWidget"></div>
+      <div id={widgetContainerId}></div>
     </>
   )
 }

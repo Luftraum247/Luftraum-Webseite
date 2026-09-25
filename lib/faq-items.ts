@@ -1,4 +1,3 @@
-ts
 // Shared FAQ content used both for the visible FAQ sections (on the
 // homepage and the Kontakt page) and for the FAQSchema structured data.
 // Kept in one place so the two pages can never drift out of sync again.

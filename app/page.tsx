@@ -1,39 +1,22 @@
 import Image from "next/image"
 import Link from "next/link"
+import Script from "next/script"
 import { ChevronRight, MapPin, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ReferencesCarousel from "@/components/references-carousel"
+import TestimonialsCarousel from "@/components/testimonials-carousel"
 import FAQSchema from "@/components/faq-schema"
 import ProvenExpertSeal from "@/components/proven-expert-seal"
+import { faqItems } from "@/lib/faq-items"
 
 export default function Home() {
-  const faqItems = [
-    {
-      question: "Wie schnell können Sie einen Auftrag ausführen?",
-      answer:
-        "Auf Ihre Anfrage melden wir uns in der Regel innerhalb von 24–48 Stunden mit einem Angebot zurück. Der eigentliche Vor-Ort-Termin findet je nach Auftragslage und Wetterbedingungen meist innerhalb von 1-2 Wochen statt; bei dringenden Anfragen bemühen wir uns um eine schnellere Terminierung.",
-    },
-    {
-      question: "Welche Wetterbedingungen sind für Drohnenflüge erforderlich?",
-      answer:
-        "Für optimale Ergebnisse benötigen wir trockenes Wetter mit wenig Wind (unter 8 m/s). Bei Regen, Schnee oder starkem Wind können nur noch eingeschränkt Flüge mit der DJI-Matrice-Serie durchgeführt werden (DJI M30T, Schutzklasse IP55, und Matrice 210 V2 RTK, Schutzklasse IP43) – etwa für Rettungsflüge und andere Sondereinsätze.",
-    },
-    {
-      question: "Benötigen Sie spezielle Genehmigungen für Drohnenflüge?",
-      answer:
-        "Wir verfügen über alle notwendigen Genehmigungen und Versicherungen für kommerzielle Drohnenflüge. Bei besonderen Einsatzorten (z.B. Flughafennähe) kümmern wir uns um die erforderlichen Sondergenehmigungen.",
-    },
-    {
-      question: "In welchem Format erhalte ich die Ergebnisse?",
-      answer:
-        "Je nach Auftrag liefern wir die Daten in verschiedenen Formaten: Bilder als JPG/PNG, Videos als MP4, 3D-Modelle als OBJ/FBX und Karten als GeoTIFF oder PDF. Spezielle Formate sind auf Anfrage möglich.",
-    },
-  ]
-
   return (
     <main className="min-h-screen bg-black text-white">
       <div id="soro-blog"></div>
-      <script src="https://app.trysoro.com/api/embed/c878b43c-ad52-4799-bc18-44136e52f0e0" defer></script>
+      <Script
+        src="https://app.trysoro.com/api/embed/c878b43c-ad52-4799-bc18-44136e52f0e0"
+        strategy="lazyOnload"
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-start lg:items-center overflow-hidden pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-0 lg:pb-0">
@@ -42,6 +25,7 @@ export default function Home() {
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-05-14%20at%2015.43.33-3KtdDhV59Gizi59JyoUP1O3huMVcfq.png"
             alt="Collage von Drohneninspektionen: Thermografie von Solaranlagen, Inspektion von Stromleitungen, Industrieanlagen und Windkraftanlagen"
             fill
+            sizes="100vw"
             className="object-cover opacity-80"
             priority
           />
@@ -66,14 +50,14 @@ export default function Home() {
                   className="border-blue-600 text-blue-400 hover:bg-blue-900/20 px-8 py-6 text-lg bg-transparent"
                   asChild
                 >
-                  <Link href="/kontakt#kontaktformular">Angebot in 24h erhalten</Link>
+                  <Link href="/kontakt#kontaktformular">Angebot in 24h anfordern</Link>
                 </Button>
               </div>
             </div>
 
             {/* ProvenExpert Seal - bottom on mobile, right side on desktop */}
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 lg:p-6 max-w-sm mx-auto lg:mx-0 mb-8 lg:mb-0">
-              <ProvenExpertSeal />
+              <ProvenExpertSeal widgetContainerId="proSealWidget-hero" />
             </div>
           </div>
         </div>
@@ -97,6 +81,7 @@ export default function Home() {
                   src="/3d-vermessung-kartierung-02.png"
                   alt="3D-Punktwolke und Vermessung eines Gebäudes mit farblich hervorgehobenen Strukturen"
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -121,6 +106,7 @@ export default function Home() {
                   src="/thermografie-03.png"
                   alt="Thermografische Luftaufnahme von Gebäuden und Solaranlagen zur Wärmeverlusterkennung"
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -145,6 +131,7 @@ export default function Home() {
                   src="/industrie-inspektion-04.png"
                   alt="Drohneninspektion einer Industrieanlage und detaillierte Dachanalyse mit Schadensmarkierungen"
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -169,6 +156,7 @@ export default function Home() {
                   src="/drone-building-inspection.png"
                   alt="Drohnengestützte Inspektion eines Gebäudes zur Analyse von Dach und Fassade"
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -193,6 +181,7 @@ export default function Home() {
                   src="/indoor-inspection-drones.webp"
                   alt="Spezialisierte Indoor-Drohne für Inspektionen in Innenräumen und schwer zugänglichen Bereichen"
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -217,6 +206,7 @@ export default function Home() {
                   src="/dji-inspire-2.png"
                   alt="DJI Inspire 2 Drohne für professionelle Luftbildfotografie und Filmaufnahmen"
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -248,6 +238,13 @@ export default function Home() {
           </div>
 
           <ReferencesCarousel />
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-zinc-900" id="testimonials">
+        <div className="container mx-auto px-4">
+          <TestimonialsCarousel />
         </div>
       </section>
 
@@ -285,6 +282,7 @@ export default function Home() {
                 src="/MAVIC3Enterprise.jpg"
                 alt="DJI Mavic 3 Enterprise Drohne - Kompakte und leistungsstarke Drohne für professionelle Einsätze"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-contain"
               />
             </div>
@@ -342,6 +340,7 @@ export default function Home() {
                 src="/DJM30T.jpg"
                 alt="DJI Matrice M30T Drohne - Industriedrohne mit Wärmebildkamera für professionelle Inspektionen"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover rounded-lg"
               />
             </div>
@@ -375,6 +374,7 @@ export default function Home() {
                 src="/solar-farm-inspection.webp"
                 alt="Luftraum247 Drohne bei der Inspektion einer Solaranlage - Professionelle Dienstleistung aus der Vogelperspektive"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover rounded-lg"
               />
             </div>
@@ -390,7 +390,7 @@ export default function Home() {
             Kontaktieren Sie uns noch heute für ein unverbindliches Angebot oder eine Beratung zu Ihrem Projekt
           </p>
           <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-6 text-lg" asChild>
-            <Link href="/kontakt#kontaktformular">Kontakt aufnehmen</Link>
+            <Link href="/kontakt#kontaktformular">Angebot in 24h anfordern</Link>
           </Button>
         </div>
       </section>

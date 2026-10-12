@@ -10,29 +10,28 @@ import StickyContactBar from "@/components/sticky-contact-bar"
 
 const inter = Inter({ subsets: ["latin"] })
 
-const SITE_URL = "https://luftraum247.de"
+// Die Website läuft unter www. – diese Adresse muss überall gleich sein.
+const SITE_URL = "https://www.luftraum247.de"
 const OG_IMAGE = "/thermal-drone-inspection.png"
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "Luftraum247 - Professionelle Drohneninspektionen",
-    template: "%s | Luftraum247",
+    // Die Seitentitel enthalten "| Luftraum247" bereits selbst,
+    // deshalb wird hier nichts mehr angehängt (sonst steht der Name doppelt).
+    template: "%s",
   },
   description:
     "Ihr Partner für Drohneninspektionen, 3D-Vermessung, Thermografie und mehr. Deutschlandweit tätig aus Hannover, Niedersachsen.",
-  keywords:
-    "Drohneninspektionen, Thermografie, 3D-Vermessung, Luftbildaufnahmen, Drohnenservice, Hannover, Deutschland",
   authors: [{ name: "Luftraum247" }],
   creator: "Luftraum247",
   publisher: "Luftraum247",
-  alternates: {
-    canonical: "/",
-  },
+  // Kein gemeinsamer Canonical-Link mehr: Vorher zeigte jede Unterseite auf die
+  // Startseite, wodurch Google die Unterseiten als Kopien der Startseite behandelt hat.
   openGraph: {
     type: "website",
     locale: "de_DE",
-    url: SITE_URL,
     siteName: "Luftraum247",
     title: "Luftraum247 - Professionelle Drohneninspektionen",
     description:
@@ -55,7 +54,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  generator: "v0.dev",
 }
 
 export default function RootLayout({

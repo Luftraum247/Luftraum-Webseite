@@ -170,7 +170,7 @@ export default function Footer() {
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Luftraum247. Alle Rechte vorbehalten.
           </p>
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             <Link href="/impressum" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
               Impressum
             </Link>
@@ -179,9 +179,10 @@ export default function Footer() {
             </Link>
             <Link href="/agb" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
               AGB
-              <Link href="/widerruf" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
-                Widerruf
-              </Link>
+            </Link>
+            <Link href="/widerruf" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
+              Widerruf
+            </Link>
             <Link href="/compliance" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
               Compliance
             </Link>

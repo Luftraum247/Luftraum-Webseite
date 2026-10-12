@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://luftraum247.de
+Host: https://www.luftraum247.de
 
 # Sitemaps
-Sitemap: https://luftraum247.de/sitemap.xml
+Sitemap: https://www.luftraum247.de/sitemap.xml

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://luftraum247.de"
+  const baseUrl = "https://www.luftraum247.de"
 
   return [
     {

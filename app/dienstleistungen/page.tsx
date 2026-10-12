@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function DienstleistungenPage() {
   const breadcrumbItems = [
     { name: "Home", url: "https://luftraum247.de/" },
-    { name: "Dienstleistungen", url: "https://luftraum247.de/dienstleistungen" },
+    { name: "Dienstleistungen", url: "https://www.luftraum247.de/dienstleistungen" },
   ]
 
   // 3D Vermessung und Kartierung

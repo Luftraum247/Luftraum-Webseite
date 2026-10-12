@@ -54,6 +54,10 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  // Bestätigung für die Google Search Console
+  verification: {
+    google: "cVaMghDGB6GdIqG5aubPkpqGcIhPkHH0pK7Sgv_hOJI",
+  },
 }
 
 export default function RootLayout({

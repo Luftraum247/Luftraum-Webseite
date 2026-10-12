@@ -179,7 +179,9 @@ export default function Footer() {
             </Link>
             <Link href="/agb" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
               AGB
-            </Link>
+              <Link href="/widerruf" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
+                Widerruf
+              </Link>
             <Link href="/compliance" className="text-gray-500 hover:text-blue-400 text-sm transition-colors">
               Compliance
             </Link>
